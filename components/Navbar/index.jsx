@@ -3,7 +3,7 @@ import { RootContext } from "../../contexts";
 import classes from "./style.module.css";
 
 export default function Navbar(){
-  return <div className={`Navbar absolute text-gray-700 flex justify-between w-1/4 transform rotate-90 ${classes.Navbar}`}>
+  return <div className={`Navbar top-2/4 absolute text-gray-700 flex justify-between w-1/4 transform rotate-90 ${classes.Navbar}`}>
     {['About', 'Skills', 'Experience'].map(navbarItemLabel => <NavbarItem key={navbarItemLabel} label={navbarItemLabel}/>)}
   </div>
 }

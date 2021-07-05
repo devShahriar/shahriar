@@ -1,0 +1,7 @@
+.Navbar {
+  right: -100px;
+}
+
+.NavbarItem{
+  transition: font-weight 250ms ease-in-out;
+}

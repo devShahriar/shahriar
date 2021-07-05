@@ -11,13 +11,13 @@ export default function Home() {
       </Head>
       <Navbar />
       <main>
-        <Section>
+        <Section className="about">
           Section 1
         </Section>
-        <Section>
+        <Section className="skills">
           Section 2
         </Section>
-        <Section>
+        <Section className="experience">
           Section 3
         </Section>
       </main>

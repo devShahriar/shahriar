@@ -1,5 +1,5 @@
 export default function Section(props){
-  return <div className="Section">
+  return <div className={`Section h-screen ${props.className ?? ''}`}>
     {props.children}
   </div>
 }

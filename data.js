@@ -1,10 +1,11 @@
 const data = {
   name: "Shahriar Islam",
-  landing: {
+  about: {
     title: "Hi, I'm Shahriar Islam",
     subtitles: [
       "Data Engineer, Pathao"
-    ]
+    ],
+    bio: "Willing to work hard and face any challenges to provide the best results"
   },
   links: [
     {

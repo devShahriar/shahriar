@@ -27,12 +27,14 @@ export default function Home() {
                 className={`font-bold text-primary-500 text-3xl`}
             />
           </div>
-          <Image
+          <div className="animate-fade-in-from-left">
+            <Image
               src="/landing.svg"
               alt="Landing"
               width="500"
               height="500"
-          />
+            />
+          </div>
         </Section>
         <Skills />
         <Section className="experience">

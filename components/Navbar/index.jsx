@@ -11,8 +11,8 @@ export default function Navbar(){
 function NavbarItem(props){
   const {currentSection, setCurrentSection} = useContext(RootContext);
   const {label} = props;
-  return <span className={`cursor-pointer text-lg NavbarItem-${label} ${classes.NavbarItem} ${currentSection === label.toLowerCase() ? 'font-bold' : ''}`} onClick={()=>{
-    setCurrentSection(label.toLowerCase())
+  return <span className={`cursor-pointer NavbarItem-${label} ${classes.NavbarItem} ${currentSection === label ? 'font-bold text-xl' : 'text-lg'}`} onClick={()=>{
+    setCurrentSection(label)
     const sectionElement = document.querySelector(`.Section-${label}`);
     if(sectionElement)
       sectionElement.scrollIntoView({ 

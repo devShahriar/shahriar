@@ -1,15 +1,20 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useContext, useEffect, useRef } from 'react';
+import { RootContext } from "../../contexts";
 
 export default function Section(props){
   const ref = useRef();
+  const {setCurrentSection} = useContext(RootContext);
+
   useEffect(()=>{
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
-        if (entry.isIntersecting && !ref.current.classList.contains('animate-fade-in-right')) {
-          ref.current.classList.add('animate-fade-in-right')
-          ref.current.classList.remove('opacity-0')
+        if (entry.isIntersecting) {
+          if(!ref.current.classList.contains('animate-fade-in-right')){
+            ref.current.classList.add('animate-fade-in-right')
+            ref.current.classList.remove('opacity-0')
+          }
+          setCurrentSection(props.name)
         }
-
       });
     }, { threshold: 0.65 });
     observer.observe(ref.current);

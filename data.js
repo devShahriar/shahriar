@@ -63,15 +63,29 @@ const data = {
   ],
   experiences: [
     {
-      organization: "Volunteer 1",
+      organization: "Pathao",
       role: "Full Stack Developer",
       type: "Internship",
       startDate: "2020-07-20",
       endDate: "2021-01-20",
-      thumbnail: "/volunteer1.png",
-      description: [
+      thumbnail: "https://pathao.com/wp-content/uploads/2019/03/cropped-Pathao-icon-.png",
+      location: "Dhaka, Bangladesh",
+      descriptions: [
         "dasdasd",
+        "dasdasds",
+      ]
+    },
+    {
+      organization: "Food Panda",
+      role: "Frontend Engineer",
+      type: "Freelancer",
+      startDate: "2020-07-20",
+      endDate: "2021-01-20",
+      thumbnail: "https://pathao.com/wp-content/uploads/2019/03/cropped-Pathao-icon-.png",
+      location: "Dhaka, Bangladesh",
+      descriptions: [
         "dasdasd",
+        "dasdasds",
       ]
     }
   ]

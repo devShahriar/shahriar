@@ -30,11 +30,22 @@ module.exports = {
             opacity: '1',
             transform: 'translateY(0)'
           }
+        },
+        'fade-in-right': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateX(-10px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateX(0)'
+          }
         }
       },
       animation: {
-        wiggle: 'wiggle 1s ease-in-out infinite',
-        'fade-in-down': 'fade-in-down 0.5s ease-out 1'
+        wiggle: 'wiggle 1s ease-in-out infinite 1s',
+        'fade-in-down': 'fade-in-down 0.5s ease-out 1 1s',
+        'fade-in-right': 'fade-in-right 0.5s ease-out 1 1s'
       }
     }
   },

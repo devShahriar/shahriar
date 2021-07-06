@@ -34,7 +34,21 @@
       "items": [
         {
           "label": "Go",
-          "progress": 80
+          "progress": 80,
+          "tasks": [
+            {
+              "started": "2021-07-06T09:46:56.138Z",
+              "ended": "2021-07-06T09:46:56.138Z",
+              "title": "Uber clone backend",
+              "description": "Built an Uber backend clone using go"
+            },
+            {
+              "started": "2021-07-06T09:46:56.138Z",
+              "ended": "2021-07-06T09:46:56.138Z",
+              "title": "Distributed backend",
+              "description": "Built an Uber backend clone using go"
+            }
+          ]
         },
         {
           "label": "Javascript",

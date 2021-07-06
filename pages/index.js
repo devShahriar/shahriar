@@ -6,7 +6,7 @@ import { landing, name } from '../data.json';
 
 export default function Home() {
   return (
-    <div className="font-mono bg-secondary-800 h-screen overflow-auto">
+    <div className="font-mono bg-secondary-800 h-screen overflow-auto scrollbar scrollbar-thumb-green-500 scrollbar-track-gray-100">
       <Head>
         <title>{name}</title>
         <meta name="description" content="Portfolio for devShahriar" />

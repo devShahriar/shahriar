@@ -1,0 +1,81 @@
+{
+  "name": "Shahriar Islam",
+  "landing": {
+    "title": "Hi, I'm Shahriar Islam",
+    "subtitles": [
+      "Data Engineer, Pathao"
+    ],
+    "professionalDetails": [
+      {
+        "alt": "Linkedin",
+        "icon": "linkedin",
+        "link": "https://www.linkedin.com/in/devShahriar/"
+      },
+      {
+        "alt": "Stackoverflow",
+        "icon": "stackoverflow",
+        "link": "https://stackoverflow.com/users/15832436/devShahriar"
+      },
+      {
+        "alt": "Github",
+        "icon": "github",
+        "link": "https://github.com/devShahriar"
+      },
+      {
+        "alt": "Email",
+        "icon": "gmail",
+        "link": "mailto:iam@shahriar.islam.com"
+      }
+    ]
+  },
+  "skills": {
+    "Languages known": [
+      "Go"
+    ],
+    "Frontend": [
+      "React"
+    ],
+    "Backend": [
+      "Node.js",
+      "Express",
+      "Flask",
+      "MySQL",
+      {
+        "alt": "Azure",
+        "icon": "microsoftazure"
+      }
+    ],
+    "Mobile": [
+      {
+        "alt": "React_Native",
+        "icon": "react"
+      },
+      "Android Studio",
+      "Kotlin"
+    ]
+  },
+  "experience": {
+    "Work Experience": [
+      {
+        "organization": "Volunteer 1",
+        "role": "Full Stack Developer",
+        "type": "Internship",
+        "startDate": "2020-07-20",
+        "endDate": "2021-01-20",
+        "url": "https://www.linkedin.com/company/volunteer2/",
+        "thumbnail": "/volunteer1.png"
+      }
+    ],
+    "Volunteer Experience": [
+      {
+        "organization": "Volunteer 2",
+        "role": "Technical Head",
+        "type": "Member",
+        "startDate": "2019-07-01",
+        "endDate": "",
+        "url": "https://www.linkedin.com/company/volunteer1/",
+        "thumbnail": "/volunteer2.png"
+      }
+    ]
+  }
+}

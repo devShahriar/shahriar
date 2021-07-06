@@ -4,30 +4,30 @@
     "title": "Hi, I'm Shahriar Islam",
     "subtitles": [
       "Data Engineer, Pathao"
-    ],
-    "professionalDetails": [
-      {
-        "alt": "Linkedin",
-        "icon": "linkedin",
-        "link": "https://www.linkedin.com/in/devShahriar/"
-      },
-      {
-        "alt": "Stackoverflow",
-        "icon": "stackoverflow",
-        "link": "https://stackoverflow.com/users/15832436/devShahriar"
-      },
-      {
-        "alt": "Github",
-        "icon": "github",
-        "link": "https://github.com/devShahriar"
-      },
-      {
-        "alt": "Email",
-        "icon": "gmail",
-        "link": "mailto:iam@shahriar.islam.com"
-      }
     ]
   },
+  "links": [
+    {
+      "alt": "Linkedin",
+      "icon": "linkedin",
+      "link": "https://www.linkedin.com/in/devShahriar/"
+    },
+    {
+      "alt": "Stackoverflow",
+      "icon": "stackoverflow",
+      "link": "https://stackoverflow.com/users/15832436/devShahriar"
+    },
+    {
+      "alt": "Github",
+      "icon": "github",
+      "link": "https://github.com/devShahriar"
+    },
+    {
+      "alt": "Email",
+      "icon": "gmail",
+      "link": "mailto:iam@shahriar.islam.com"
+    }
+  ],
   "skills": {
     "Languages known": [
       "Go"

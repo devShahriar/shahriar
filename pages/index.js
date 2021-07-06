@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import ReactTyped from "react-typed";
-import { Navbar, Section } from "../components";
+import { Links, Navbar, Section } from "../components";
 import { landing, name } from '../data.json';
 
 export default function Home() {
@@ -13,8 +13,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      <Links />
       <main>
-        <Section className="about flex items-center justify-between">
+        <Section className="about flex items-center justify-between px-10">
           <div>
             <div className="text-5xl text-gray-50 my-5">{name}</div>
             <ReactTyped
@@ -27,8 +28,8 @@ export default function Home() {
           <Image
               src="/landing.svg"
               alt="Landing"
-              width="750"
-              height="750"
+              width="500"
+              height="500"
           />
         </Section>
         <Section className="skills">

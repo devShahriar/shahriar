@@ -87,6 +87,32 @@ const data = {
         "dasdasd",
         "dasdasds",
       ]
+    },
+    {
+      organization: "Food Panda",
+      role: "Frontend Engineer",
+      type: "Freelancer",
+      startDate: "2020-07-20",
+      endDate: "2021-01-20",
+      thumbnail: "https://pathao.com/wp-content/uploads/2019/03/cropped-Pathao-icon-.png",
+      location: "Dhaka, Bangladesh",
+      descriptions: [
+        "dasdasd",
+        "dasdasds",
+      ]
+    },
+    {
+      organization: "Food Panda",
+      role: "Frontend Engineer",
+      type: "Freelancer",
+      startDate: "2020-07-20",
+      endDate: "2021-01-20",
+      thumbnail: "https://pathao.com/wp-content/uploads/2019/03/cropped-Pathao-icon-.png",
+      location: "Dhaka, Bangladesh",
+      descriptions: [
+        "dasdasd",
+        "dasdasds",
+      ]
     }
   ]
 }

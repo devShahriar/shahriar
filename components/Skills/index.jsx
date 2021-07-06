@@ -34,7 +34,7 @@ export default function Skills(){
             height="500"
         />
       </div>
-      <div className={`grid grid-cols-${data.skills.length}`}>
+      <div className={`grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-${data.skills.length}`}>
         {data.skills.map(({name, items})=>{
           return <div key={name} className="m-2 bg-gradient-to-r hover:translate-y-2 hover:scale-110 transition duration-300 cursor-pointer transform from-secondary-800 via-secondary-800 to-secondary-900 bg-secondary-800 pl-5 rounded">
             <div className="font-extrabold text-2xl pb-2 text-primary-500 my-5 animate-fade-in-down">{name}</div>

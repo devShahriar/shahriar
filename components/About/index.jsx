@@ -7,7 +7,7 @@ import Section from "../Section";
 export default function About(){
   const {data} = useContext(RootContext)
 
-  return <Section name="About" className="flex items-center justify-between px-10">
+  return <Section name="About" className="flex items-center justify-between px-10 flex-col-reverse md:flex-row">
     <div>
       <div className="text-5xl text-secondary-50 my-5">{data.about.title}</div>
       <div>

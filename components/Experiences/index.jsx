@@ -19,7 +19,7 @@ function ExperienceItem(props) {
     }
   } = props;
 
-  return <div className="flex mr-5">
+  return <div className="flex mr-5 my-5">
     <div className="mr-5"><img alt={organization} src={thumbnail} width={100} height={100} /></div>
     <div>
       <div className="font-extrabold text-2xl text-primary-500 mb-1">{role}</div>
@@ -36,7 +36,7 @@ function ExperienceItem(props) {
 export default function Experiences() {
   const { data } = useContext(RootContext)
   return <Section className="experiences" header="Experiences" name="Experiences">
-    <div className="grid grid-cols-3">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3">
       {data.experiences.map((experience, index) => <ExperienceItem key={experience.organization + experience.role + experience.type+index} item={experience} />)}
     </div>
   </Section>

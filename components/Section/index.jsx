@@ -10,7 +10,7 @@ export default function Section(props){
           !triggeredOnce && setTriggeredOnce(true)
         }
       });
-    }, { threshold: 0 });
+    }, { threshold: 0.5 });
     observer.observe(ref.current);
   }, [triggeredOnce]);
   const {header} = props;

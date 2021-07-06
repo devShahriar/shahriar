@@ -1,5 +1,9 @@
 const colors = require('tailwindcss/colors');
 
+const fadeInFromLeftAnimation = 'fade-in-from-left 1s ease-in-out 1';
+const fadeInFromRightAnimation = 'fade-in-from-right 1s ease-in-out 1';
+const slowBounceAnimation = 'slow-bounce 2s ease-in-out infinite 1.5s';
+
 module.exports = {
   purge: ['./pages/**/*.{jsx}', './components/**/*.{jsx}'],
   darkMode: false, // or 'media' or 'class'
@@ -85,9 +89,11 @@ module.exports = {
         wiggle: 'wiggle 1s ease-in-out infinite',
         'fade-in-down': 'fade-in-down 0.5s ease-out 1',
         'fade-in-right': 'fade-in-right 1s ease-out 1',
-        'fade-in-from-right': 'fade-in-from-right 1s ease-in-out 1',
-        'fade-in-from-left': 'fade-in-from-left 1s ease-out 1',
-        'slow-bounce': 'slow-bounce 2s ease-in-out infinite 1.5s',
+        'fade-in-from-right': fadeInFromRightAnimation,
+        'fade-in-from-left': fadeInFromLeftAnimation,
+        'slow-bounce': slowBounceAnimation,
+        'fade-l-bounce': `${fadeInFromRightAnimation}, ${slowBounceAnimation}`,
+        'fade-r-bounce': `${fadeInFromLeftAnimation}, ${slowBounceAnimation}`,
       }
     }
   },

@@ -8,7 +8,7 @@ import { RootContext } from '../contexts';
 export default function Home() {
   const {data} = useContext(RootContext)
   return (
-    <div className="font-mono bg-secondary-800 h-screen overflow-auto scrollbar scrollbar-thumb-green-500 scrollbar-track-gray-100">
+    <div className="font-mono bg-secondary-900 h-screen overflow-auto scrollbar scrollbar-thumb-green-500 scrollbar-track-gray-100">
       <Head>
         <title>{data.name}</title>
         <meta name="description" content="Portfolio for devShahriar" />

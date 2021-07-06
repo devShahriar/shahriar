@@ -31,115 +31,49 @@ const data = {
   skills: [
     {
       name: "Languages",
-      items: [
-        {
-          label: "Go",
-          progress: 80,
-          tasks: [
-            "Built an Uber backend clone using go",
-            "Built an Uber backend clone using go"
-          ]
-        },
-        {
-          label: "Javascript",
-          progress: 80
-        },
-        {
-          label: "Python",
-          progress: 80
-        }
-      ]
+      items: ["Java","Javascript", "Python"]
     },
     {
-      name: "Backend",
+      name: "Backend Development",
       items: [
         {
           label: "Node.js",
-          icon: "nodedotjs",
-          progress: 80
-        },
-        {
-          label: "Express",
-          progress: 80
-        },
-        {
-          label: "Flask",
-          progress: 80
-        },
-        {
-          label: "Go",
-          progress: 80
-        }
+          icon: "nodedotjs"
+        }, 
+        "Express","Flask","Go"
       ]
     },
     {
       name: "Database",
-      items: [
-        {
-          label: "MySQL",
-          progress: 80
-        },
-        {
-          label: "Redis",
-          progress: 80
-        },
-        {
-          label: "Mongodb",
-          progress: 80
-        },
-        {
-          label: "Mysql",
-          progress: 80
-        }
-      ]
+      items: ["MySQL", "Redis",  "Mongodb",  "Mysql"]
     },
     {
       name: "Mobile",
-      items: [
-        {
-          label: "Android Studio",
-          progress: 80
-        },
-        {
-          label: "Kotlin",
-          progress: 80
-        }
-      ]
+      items: ["Android Studio", "Kotlin"]
     },
     {
       name: "Frontend",
-      items: [
-        {
-          label: "React",
-          progress: 80
-        }
-      ]
+      items: ["React"]
+    },
+    {
+      name: "Devops",
+      items: ["Kubernetes","Docker", "Helm"]
     }
   ],
-  experiences: {
-    "Work Experience": [
-      {
-        organization: "Volunteer 1",
-        role: "Full Stack Developer",
-        type: "Internship",
-        startDate: "2020-07-20",
-        endDate: "2021-01-20",
-        url: "https://www.linkedin.com/company/volunteer2/",
-        thumbnail: "/volunteer1.png"
-      }
-    ],
-    "Volunteer Experience": [
-      {
-        organization: "Volunteer 2",
-        role: "Technical Head",
-        type: "Member",
-        startDate: "2019-07-01",
-        endDate: "",
-        url: "https://www.linkedin.com/company/volunteer1/",
-        thumbnail: "/volunteer2.png"
-      }
-    ]
-  }
+  experiences: [
+    {
+      organization: "Volunteer 1",
+      role: "Full Stack Developer",
+      type: "Internship",
+      startDate: "2020-07-20",
+      endDate: "2021-01-20",
+      thumbnail: "/volunteer1.png",
+      description: [
+        "dasdasd",
+        "dasdasd",
+      ]
+    }
+  ]
 }
 
 export default data;

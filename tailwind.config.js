@@ -48,7 +48,7 @@ module.exports = {
           },
           '75%': {
             opacity: '.75',
-            transform: 'translateX(20%)'
+            transform: 'translateX(10%)'
           },
           '100%': {
             opacity: '1',
@@ -62,7 +62,7 @@ module.exports = {
           },
           '75%': {
             opacity: '.75',
-            transform: 'translateX(-20%)'
+            transform: 'translateX(-10%)'
           },
           '100%': {
             opacity: '1',

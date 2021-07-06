@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useContext } from 'react';
 import ReactTyped from "react-typed";
-import { Links, Navbar, Section, Skills } from "../components";
+import { Experiences, Links, Navbar, Section, Skills } from "../components";
 import { RootContext } from '../contexts';
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
       <Navbar />
       <Links />
       <main>
-        <Section className="about flex items-center justify-between px-10">
+        <Section name="About" className="flex items-center justify-between px-10">
           <div>
             <div className="text-5xl text-secondary-50 my-5">{data.landing.title}</div>
             <ReactTyped
@@ -37,9 +37,7 @@ export default function Home() {
           </div>
         </Section>
         <Skills />
-        <Section className="experience">
-          Section 3
-        </Section>
+        <Experiences />
       </main>
     </div>
   )

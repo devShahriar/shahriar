@@ -24,7 +24,7 @@ function SkillItem(props){
 
 export default function Skills(){
   const {data} = useContext(RootContext)
-  return <Section className="skills" header="Skills">  
+  return <Section className="skills" header="Skills" name="Skills">  
     <div>
       <div className="flex justify-center animate-fade-l-bounce">
         <Image

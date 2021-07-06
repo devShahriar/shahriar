@@ -7,7 +7,6 @@ import Section from "../Section";
 function SkillItem(props){
   const {item} = props;
   let icon = '',label = '';
-  console.log(item)
   if(typeof item === "string"){
     icon = getIcon(item)
     label = item
@@ -15,9 +14,9 @@ function SkillItem(props){
     icon = getIcon(item.icon ?? item.label)
     label = item.label;
   }
-  return <div className="text-primary-500 mb-10" key={label}>
-    <div className="flex mb-3 items-center">
-      <span className="mr-5">{icon}</span>
+  return <div className="text-primary-500 my-5" key={label}>
+    <div className="flex items-center">
+      <span className="mr-5 hover:scale-125 transform transition">{icon}</span>
       <span className="flex-grow text-lg font-bold">{label}</span>
     </div>
   </div>
@@ -27,7 +26,7 @@ export default function Skills(){
   const {data} = useContext(RootContext)
   return <Section className="skills" header="Skills">  
     <div>
-      <div className="flex justify-center animate-fade-in-from-right">
+      <div className="flex justify-center animate-fade-in-from-right animate-slow-bounce">
         <Image
             src="/tech_stack.svg"
             alt="Tech Stack"
@@ -37,10 +36,10 @@ export default function Skills(){
       </div>
       <div className={`grid grid-cols-${data.skills.length}`}>
         {data.skills.map(({name, items})=>{
-          return <div key={name} className="">
-            <div className="font-bold text-2xl text-primary-500 my-5 animate-fade-in-down">{name}</div>
-            <div className="mb-10 pr-4">
-              {items.map(item=><SkillItem item={item} key={item.label}/>)}
+          return <div key={name} className="m-2 bg-gradient-to-r hover:translate-y-2 hover:scale-110 transition transform from-secondary-800 to-secondary-900 bg-secondary-800 pl-5 rounded">
+            <div className="font-extrabold text-2xl pb-2 text-primary-500 my-5 animate-fade-in-down">{name}</div>
+            <div>
+              {items.map(item=><SkillItem item={item} key={item.label ?? item}/>)}
             </div>
           </div>
         })}

@@ -27,7 +27,7 @@ export default function Home() {
                 className={`font-bold text-primary-500 text-3xl`}
             />
           </div>
-          <div className="animate-fade-in-from-left">
+          <div className="animate-fade-in-from-left animate-slow-bounce">
             <Image
               src="/landing.svg"
               alt="Landing"

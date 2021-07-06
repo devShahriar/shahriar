@@ -24,7 +24,7 @@ module.exports = {
         'fade-in-down': {
           '0%': {
             opacity: '0',
-            transform: 'translateY(-10px)'
+            transform: 'translateY(-15px)'
           },
           '100%': {
             opacity: '1',
@@ -68,6 +68,17 @@ module.exports = {
             opacity: '1',
             transform: 'translateX(0)'
           }
+        },
+        'slow-bounce': {
+          '0%': {
+            transform: 'translateY(-2.5px)'
+          },
+          '50%': {
+            transform: 'translateY(2.5px)'
+          },
+          '100%': {
+            transform: 'translateY(-2.5px)'
+          }
         }
       },
       animation: {
@@ -76,6 +87,7 @@ module.exports = {
         'fade-in-right': 'fade-in-right 1s ease-out 1',
         'fade-in-from-right': 'fade-in-from-right 1s ease-in-out 1',
         'fade-in-from-left': 'fade-in-from-left 1s ease-out 1',
+        'slow-bounce': 'slow-bounce 2s ease-in-out infinite 1.5s',
       }
     }
   },

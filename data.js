@@ -36,18 +36,8 @@ const data = {
           label: "Go",
           progress: 80,
           tasks: [
-            {
-              started: "2021-07-06T09:46:56.138Z",
-              ended: "2021-07-06T09:46:56.138Z",
-              title: "Uber clone backend",
-              description: "Built an Uber backend clone using go"
-            },
-            {
-              started: "2021-07-06T09:46:56.138Z",
-              ended: "2021-07-06T09:46:56.138Z",
-              title: "Distributed backend",
-              description: "Built an Uber backend clone using go"
-            }
+            "Built an Uber backend clone using go",
+            "Built an Uber backend clone using go"
           ]
         },
         {
@@ -92,6 +82,14 @@ const data = {
         {
           label: "Redis",
           progress: 80
+        },
+        {
+          label: "Mongodb",
+          progress: 80
+        },
+        {
+          label: "Mysql",
+          progress: 80
         }
       ]
     },
@@ -118,7 +116,7 @@ const data = {
       ]
     }
   ],
-  experience: {
+  experiences: {
     "Work Experience": [
       {
         organization: "Volunteer 1",

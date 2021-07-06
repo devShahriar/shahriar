@@ -8,7 +8,7 @@ export default function Task(props){
     </div>
     <div>
       <div className="text-primary-500 font-bold text-2xl">{title}</div>
-      <div className="mb-2 text-secondary-300">{parseDate(started)} - {parseDate(ended)}</div>
+      <div className="mb-2 text-secondary-300">{parseDate(started)} - {ended ? parseDate(ended) : "Present"}</div>
       <div className="text-xl">
         {description}
       </div>

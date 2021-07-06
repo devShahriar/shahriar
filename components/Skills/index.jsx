@@ -9,7 +9,7 @@ function SkillItem(props){
   return <div className="text-secondary-100" key={label}>
     <div className="flex mb-5 items-center">
       <span className="mr-5">{icon}</span>
-      <span className="flex-grow">{label}</span>
+      <span className="flex-grow text-lg">{label}</span>
       <ProgressBar progress={progress}/>
     </div>
   </div>

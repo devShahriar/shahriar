@@ -19,7 +19,7 @@ export default function About(){
         />
       </div>
       <div className="text-secondary-300 text-lg my-3">{data.about.bio}</div>
-      <button type="button" className="animate-wiggle bg-primary-500 px-6 py-2 rounded font-extrabold my-5 hover:scale-110 transform transition duration-300 ease-in-out">Get in touch</button>
+      <button type="button" className="animate-wiggle bg-primary-500 px-8 py-3 text-lg rounded font-extrabold my-5 hover:scale-110 transform transition duration-300 ease-in-out">Get in touch</button>
     </div>
     <div className="animate-fade-r-bounce">
       <Image

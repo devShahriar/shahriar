@@ -1,3 +1,4 @@
+import About from "./About"
 import Experiences from "./Experiences"
 import Links from "./Links"
 import Navbar from "./Navbar"
@@ -7,6 +8,7 @@ import Skills from "./Skills"
 import Task from "./Task"
 
 export {
+  About,
   Experiences,
   Task,
   ProgressBar,

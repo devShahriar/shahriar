@@ -1,8 +1,6 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import { useContext } from 'react';
-import ReactTyped from "react-typed";
-import { Experiences, Links, Navbar, Section, Skills } from "../components";
+import { About, Experiences, Links, Navbar, Skills } from "../components";
 import { RootContext } from '../contexts';
 
 export default function Home() {
@@ -17,25 +15,7 @@ export default function Home() {
       <Navbar />
       <Links />
       <main>
-        <Section name="About" className="flex items-center justify-between px-10">
-          <div>
-            <div className="text-5xl text-secondary-50 my-5">{data.landing.title}</div>
-            <ReactTyped
-                strings={data.landing.subtitles}
-                typeSpeed={50}
-                backSpeed={100}
-                className={`font-bold text-primary-500 text-3xl`}
-            />
-          </div>
-          <div className="animate-fade-r-bounce">
-            <Image
-              src="/landing.svg"
-              alt="Landing"
-              width="500"
-              height="500"
-            />
-          </div>
-        </Section>
+        <About />
         <Skills />
         <Experiences />
       </main>

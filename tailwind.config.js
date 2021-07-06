@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     colors: {
       primary: colors.green,
-      gray: colors.gray
+      secondary: colors.gray
     },
     fontFamily: {
       'mono': ['Inconsolata','monospace', 'Menlo', 'Consolas', 'Monaco'],

@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import ReactTyped from "react-typed";
-import { Links, Navbar, Section } from "../components";
+import { Links, Navbar, Section, Skills } from "../components";
 import { landing, name } from '../data.json';
 
 export default function Home() {
   return (
-    <div className="h-screen bg-gray-800 p-20 font-mono">
+    <div className="p-20 font-mono bg-secondary-800 h-screen overflow-auto">
       <Head>
         <title>{name}</title>
         <meta name="description" content="Portfolio for devShahriar" />
@@ -17,7 +17,7 @@ export default function Home() {
       <main>
         <Section className="about flex items-center justify-between px-10">
           <div>
-            <div className="text-5xl text-gray-50 my-5">{name}</div>
+            <div className="text-5xl text-secondary-50 my-5">{landing.title}</div>
             <ReactTyped
                 strings={landing.subtitles}
                 typeSpeed={50}
@@ -32,9 +32,7 @@ export default function Home() {
               height="500"
           />
         </Section>
-        <Section className="skills">
-          Section 2
-        </Section>
+        <Skills />
         <Section className="experience">
           Section 3
         </Section>

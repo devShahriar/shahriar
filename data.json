@@ -28,32 +28,42 @@
       "link": "mailto:iam@shahriar.islam.com"
     }
   ],
-  "skills": {
-    "Languages known": [
-      "Go"
-    ],
-    "Frontend": [
-      "React"
-    ],
-    "Backend": [
-      "Node.js",
-      "Express",
-      "Flask",
-      "MySQL",
-      {
-        "alt": "Azure",
-        "icon": "microsoftazure"
-      }
-    ],
-    "Mobile": [
-      {
-        "alt": "React_Native",
-        "icon": "react"
-      },
-      "Android Studio",
-      "Kotlin"
-    ]
-  },
+  "skills": [
+    {
+      "name": "Languages",
+      "items": [
+        "Go",
+        "Javascript",
+        "Python"
+      ]
+    },
+    {
+      "name": "Backend",
+      "items": [
+        {
+          "label": "Node.js",
+          "icon": "nodedotjs"
+        },
+        "Express",
+        "Flask",
+        "MySQL",
+        "Go"
+      ]
+    },
+    {
+      "name": "Mobile",
+      "items": [
+        "Android Studio",
+        "Kotlin"
+      ]
+    },
+    {
+      "name": "Frontend",
+      "items": [
+        "React"
+      ]
+    }
+  ],
   "experience": {
     "Work Experience": [
       {

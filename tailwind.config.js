@@ -9,9 +9,34 @@ module.exports = {
       secondary: colors.gray
     },
     fontFamily: {
-      'mono': ['Inconsolata','monospace', 'Menlo', 'Consolas', 'Monaco'],
+      'mono': ['Inconsolata', 'monospace', 'Menlo', 'Consolas', 'Monaco'],
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        wiggle: {
+          '0%, 100%': {
+            transform: 'rotate(-5deg)'
+          },
+          '50%': {
+            transform: 'rotate(5deg)'
+          },
+        },
+        'fade-in-down': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-10px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          }
+        }
+      },
+      animation: {
+        wiggle: 'wiggle 1s ease-in-out infinite',
+        'fade-in-down': 'fade-in-down 0.5s ease-out 1'
+      }
+    }
   },
   variants: {
     extend: {},

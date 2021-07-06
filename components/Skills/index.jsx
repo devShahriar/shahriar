@@ -1,4 +1,5 @@
-import { skills } from "../../data.json";
+import { useContext } from "react";
+import { RootContext } from "../../contexts";
 import { getIcon } from "../../utils";
 import ProgressBar from "../ProgressBar";
 import Section from "../Section";
@@ -18,8 +19,9 @@ function SkillItem(props){
 }
 
 export default function Skills(){
+  const {data} = useContext(RootContext)
   return <Section className="skills" header="Skills">
-    {skills.map(({name, items})=>{
+    {data.skills.map(({name, items})=>{
       return <div key={name} className="">
         <div className="font-bold text-2xl text-primary-500 my-5 cursor-pointer">{name}</div>
         <div className="mb-10">

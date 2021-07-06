@@ -1,14 +1,16 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import { useContext } from 'react';
 import ReactTyped from "react-typed";
 import { Links, Navbar, Section, Skills } from "../components";
-import { landing, name } from '../data.json';
+import { RootContext } from '../contexts';
 
 export default function Home() {
+  const {data} = useContext(RootContext)
   return (
     <div className="font-mono bg-secondary-800 h-screen overflow-auto scrollbar scrollbar-thumb-green-500 scrollbar-track-gray-100">
       <Head>
-        <title>{name}</title>
+        <title>{data.name}</title>
         <meta name="description" content="Portfolio for devShahriar" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -17,9 +19,9 @@ export default function Home() {
       <main>
         <Section className="about flex items-center justify-between px-10">
           <div>
-            <div className="text-5xl text-secondary-50 my-5">{landing.title}</div>
+            <div className="text-5xl text-secondary-50 my-5">{data.landing.title}</div>
             <ReactTyped
-                strings={landing.subtitles}
+                strings={data.landing.subtitles}
                 typeSpeed={50}
                 backSpeed={100}
                 className={`font-bold text-primary-500 text-3xl`}

@@ -1,10 +1,12 @@
-import { links } from "../../data.json";
+import { useContext } from "react";
+import { RootContext } from "../../contexts";
 import { getIcon } from "../../utils";
 import classes from "./style.module.css";
 
 export default function Links(){
+  const {data} = useContext(RootContext);
   return <div className={`Links bottom-0 left-0 fixed text-primary-500 flex flex-col justify-between p-2`}>
-    {links.map((link) => <LinkItem key={link.icon} {...link}/>)}
+    {data.links.map((link) => <LinkItem key={link.icon} {...link}/>)}
   </div>
 }
 

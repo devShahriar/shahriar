@@ -20,7 +20,7 @@ export default function Section(props){
     observer.observe(ref.current);
   });
   const {header} = props;
-  return <div ref={ref} className={`Section px-24 opacity-0 Section-${props.name}`}>
+  return <div ref={ref} className={`Section px-24 opacity-0 Section-${props.name} ${props.className}`}>
     {header && <div className="text-5xl border-b-4 border-primary-500 font-extrabold text-primary-500 py-2">{header}</div>}
     {props.children}
   </div>

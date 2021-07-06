@@ -10,12 +10,15 @@ export default function About(){
   return <Section name="About" className="flex items-center justify-between px-10">
     <div>
       <div className="text-5xl text-secondary-50 my-5">{data.landing.title}</div>
-      <ReactTyped
+      <div>
+        <ReactTyped
           strings={data.landing.subtitles}
           typeSpeed={50}
           backSpeed={100}
           className={`font-bold text-primary-500 text-3xl`}
-      />
+        />
+      </div>
+      <button type="button" className="bg-primary-500 px-6 py-2 rounded font-extrabold my-5 hover:scale-110 transform transition duration-300 ease-in-out">Get in touch</button>
     </div>
     <div className="animate-fade-r-bounce">
       <Image

@@ -1,7 +1,8 @@
 import { skills } from "../../data.json";
-import { getIcon, parseDate } from "../../utils";
+import { getIcon } from "../../utils";
 import ProgressBar from "../ProgressBar";
 import Section from "../Section";
+import Task from "../Task";
 
 function SkillItem(props){
   const {label, progress, tasks} = props;
@@ -12,21 +13,7 @@ function SkillItem(props){
       <span className="flex-grow text-lg">{label}</span>
       <ProgressBar progress={progress}/>
     </div>
-    {tasks && tasks.map((task, index)=>{
-      const {started, ended, title, description} = task
-      return <div key={task.title+label} className="flex mb-5">
-        <div className="text-primary-500 font-bold text-xl mr-5">
-          {index + 1}.
-        </div>
-        <div>
-          <div className="text-primary-500 font-bold text-2xl">{title}</div>
-          <div className="mb-2 text-secondary-300">{parseDate(started)} - {parseDate(ended)}</div>
-          <div className="text-xl">
-            {description}
-          </div>
-        </div>
-      </div>
-    })}
+    {tasks && tasks.map((task, index)=><Task key={task.title+label} {...task} index={index}/>)}
   </div>
 }
 

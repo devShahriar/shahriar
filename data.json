@@ -32,9 +32,15 @@
     {
       "name": "Languages",
       "items": [
-        "Go",
-        "Javascript",
-        "Python"
+        {
+          "label": "Go"
+        },
+        {
+          "label": "Javascript"
+        },
+        {
+          "label": "Python"
+        }
       ]
     },
     {
@@ -44,23 +50,45 @@
           "label": "Node.js",
           "icon": "nodedotjs"
         },
-        "Express",
-        "Flask",
-        "MySQL",
-        "Go"
+        {
+          "label": "Express"
+        },
+        {
+          "label": "Flask"
+        },
+        {
+          "label": "Go"
+        }
+      ]
+    },
+    {
+      "name": "Database",
+      "items": [
+        {
+          "label": "MySQL"
+        },
+        {
+          "label": "Redis"
+        }
       ]
     },
     {
       "name": "Mobile",
       "items": [
-        "Android Studio",
-        "Kotlin"
+        {
+          "label": "Android Studio"
+        },
+        {
+          "label": "Kotlin"
+        }
       ]
     },
     {
       "name": "Frontend",
       "items": [
-        "React"
+        {
+          "label": "React"
+        }
       ]
     }
   ],

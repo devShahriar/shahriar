@@ -67,10 +67,11 @@ const data = {
     {
       title: "Go for beginners",
       topics: [
-        "Go"
+        "Go",
+        "Graphql"
       ],
-      video_url: null,
-      image_url: null,
+      video_url: 'https://www.youtube.com/watch?v=YS4e4q9oBaU',
+      image_url: 'https://i.ytimg.com/vi/YS4e4q9oBaU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAx318KdYCJ7_48GJKxR3b87moIwA',
       description: "This course will help you learn everything that go has to offer",
       start_date: "2021-06-14",
       registration_link: 'https://localhost:5001/graphql',

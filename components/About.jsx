@@ -5,6 +5,7 @@ import ReactTyped from "react-typed";
 import colors from "tailwindcss/colors";
 import { RootContext } from '../contexts';
 import Section from "./Section";
+import Typography from "./Typography";
 
 export default function About(){
   const {data} = useContext(RootContext)
@@ -12,15 +13,14 @@ export default function About(){
   return <Section name="About" className="">
     <div className="flex items-center justify-between flex-col-reverse md:flex-row">
       <div className="md:mb-0 mb-5">
-        <div className="text-5xl text-secondary-50 my-5">{data.about.title}</div>
-        <div>
+        <Typography.H1 secondary>{data.about.title}</Typography.H1>
+        <Typography.H2>
           <ReactTyped
             strings={data.about.subtitles}
             typeSpeed={50}
             backSpeed={100}
-            className={`font-bold text-primary-500 text-3xl`}
           />
-        </div>
+        </Typography.H2>
         <div className="text-secondary-300 text-lg my-3">{data.about.bio}</div>
         <button type="button" className="animate-wiggle hover:animate-none bg-primary-500 px-8 py-3 text-lg rounded font-extrabold my-5 duration-300 ease-in-out flex items-center">
           <HiDocumentText size={20} fill={colors.gray[900]} className="mr-2"/>

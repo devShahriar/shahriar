@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useRef } from 'react';
 import { RootContext } from "../contexts";
+import Typography from "./Typography";
 
 export default function Section(props){
   const ref = useRef();
@@ -22,7 +23,7 @@ export default function Section(props){
 
   const {header} = props;
   return <div ref={ref} className={`Section border-b-2 border-primary-500 mx-24 py-20 opacity-0 Section-${props.name} ${props.className ?? ''}`}>
-    {header && <div className="text-5xl font-extrabold text-primary-500 py-2 my-5">{header}</div>}
+    {header && <Typography.H1>{header}</Typography.H1>}
     {props.children}
   </div>
 }

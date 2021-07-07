@@ -5,7 +5,10 @@ import Section from "./Section";
 
 function CourseItem(props){
   const {item} = props;
-  return <div>{item.title}</div>
+  return <div>
+    <div className="">{item.title}</div>
+    <div></div>
+  </div>
 }
 
 export default function Courses(){

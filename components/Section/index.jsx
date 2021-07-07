@@ -21,8 +21,8 @@ export default function Section(props){
   }, []);
 
   const {header} = props;
-  return <div ref={ref} className={`Section px-24 py-20 opacity-0 Section-${props.name} ${props.className ?? ''}`}>
-    {header && <div className="text-5xl font-extrabold text-primary-500 py-2 my-10">{header}</div>}
+  return <div ref={ref} className={`Section border-b-2 border-primary-500 mx-24 py-20 opacity-0 Section-${props.name} ${props.className ?? ''}`}>
+    {header && <div className="text-5xl font-extrabold text-primary-500 py-2 my-5">{header}</div>}
     {props.children}
   </div>
 }

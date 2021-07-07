@@ -2,13 +2,14 @@ import { useContext } from "react";
 import { AiFillHome } from "react-icons/ai";
 import { BiTimeFive } from "react-icons/bi";
 import { HiPuzzle } from "react-icons/hi";
+import { IoIosBook } from "react-icons/io";
 import colors from "tailwindcss/colors";
 import { RootContext } from "../../contexts";
 import classes from "./style.module.css";
 
 export default function Navbar(){
-  return <div className={`Navbar top-2/4 fixed text-primary-500 flex justify-between w-1/4 transform rotate-90 ${classes.Navbar}`}>
-    {[['About', <AiFillHome fill={colors.green[500]} size={15} key={'about'}/>], ['Skills', <HiPuzzle fill={colors.green[500]} size={15} key={'skills'}/>], ['Experiences', <BiTimeFive fill={colors.green[500]} size={15} key={'experiences'}/>]].map(navbarItem => <NavbarItem key={navbarItem[0]} item={navbarItem}/>)}
+  return <div className={`Navbar top-0 left-0 z-10 w-min m-1 rounded fixed text-primary-500 flex p-3 bg-secondary-800 justify-between ${classes.Navbar}`}>
+    {[['About', <AiFillHome fill={colors.green[500]} size={15} key={'about'}/>], ['Skills', <HiPuzzle fill={colors.green[500]} size={15} key={'skills'}/>], ['Experiences', <BiTimeFive fill={colors.green[500]} size={15} key={'experiences'}/>], ['Courses', <IoIosBook fill={colors.green[500]} size={15} key={'courses'}/>]].map(navbarItem => <NavbarItem key={navbarItem[0]} item={navbarItem}/>)}
   </div>
 }
 

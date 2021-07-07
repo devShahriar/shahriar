@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { useContext } from 'react';
 import { BiUpArrowCircle } from "react-icons/bi";
 import colors from "tailwindcss/colors";
-import { About, Experiences, Links, Navbar, Skills } from "../components";
+import { About, Courses, Experiences, Links, Navbar, Skills } from "../components";
 import { RootContext } from '../contexts';
 
 export default function Home() {
@@ -20,6 +20,7 @@ export default function Home() {
         <About />
         <Skills />
         <Experiences />
+        <Courses />
       </main>
       <BiUpArrowCircle onClick={()=>{
         const sectionElement = document.querySelector(`.Section-About`);

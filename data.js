@@ -63,13 +63,32 @@ const data = {
       items: ["Kubernetes","Docker", "Helm"]
     }
   ],
+  courses: [
+    {
+      title: "Go for beginners",
+      topics: [
+        "Go"
+      ],
+      video_url: null,
+      image_url: null,
+      description: "This course will help you learn everything that go has to offer",
+      start_date: "2021-06-14",
+      registration_link: 'https://localhost:5001/graphql',
+      contents: [
+        {
+          title: 'Go variables',
+          description: 'In this section we will learn about go variables'
+        }
+      ]
+    }
+  ],
   experiences: [
     {
       organization: "Pathao",
       role: "Full Stack Developer",
       type: "Internship",
-      startDate: "2020-07-20",
-      endDate: "2021-01-20",
+      start_date: "2020-07-20",
+      end_date: "2021-01-20",
       thumbnail: "https://pathao.com/wp-content/uploads/2019/03/cropped-Pathao-icon-.png",
       location: "Dhaka, Bangladesh",
       descriptions: [
@@ -81,8 +100,8 @@ const data = {
       organization: "Food Panda",
       role: "Frontend Engineer",
       type: "Freelancer",
-      startDate: "2020-07-20",
-      endDate: "2021-01-20",
+      start_date: "2020-07-20",
+      end_date: "2021-01-20",
       thumbnail: "https://pathao.com/wp-content/uploads/2019/03/cropped-Pathao-icon-.png",
       location: "Dhaka, Bangladesh",
       descriptions: [
@@ -94,8 +113,8 @@ const data = {
       organization: "Food Panda",
       role: "Frontend Engineer",
       type: "Freelancer",
-      startDate: "2020-07-20",
-      endDate: "2021-01-20",
+      start_date: "2020-07-20",
+      end_date: "2021-01-20",
       thumbnail: "https://pathao.com/wp-content/uploads/2019/03/cropped-Pathao-icon-.png",
       location: "Dhaka, Bangladesh",
       descriptions: [
@@ -107,8 +126,8 @@ const data = {
       organization: "Food Panda",
       role: "Frontend Engineer",
       type: "Freelancer",
-      startDate: "2020-07-20",
-      endDate: "2021-01-20",
+      start_date: "2020-07-20",
+      end_date: "2021-01-20",
       thumbnail: "https://pathao.com/wp-content/uploads/2019/03/cropped-Pathao-icon-.png",
       location: "Dhaka, Bangladesh",
       descriptions: [

@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import { HiLocationMarker } from "react-icons/hi";
 import colors from "tailwindcss/colors";
-import { RootContext } from "../../contexts";
-import { parseDate } from "../../utils";
-import Section from "../Section";
+import { RootContext } from "../contexts";
+import { parseDate } from "../utils";
+import Section from "./Section";
 
 function ExperienceItem(props) {
   const {

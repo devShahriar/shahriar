@@ -1,4 +1,4 @@
-import { getIcon } from "../../utils";
+import { getIcon } from "../utils";
 
 export default function Icon(props){
   const {item} = props;

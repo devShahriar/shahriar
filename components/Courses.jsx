@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { RootContext } from "../../contexts";
-import Section from "../Section";
+import { RootContext } from "../contexts";
+import Section from "./Section";
 
 function CourseItem(props){
   const {item} = props;

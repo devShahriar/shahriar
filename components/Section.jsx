@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef } from 'react';
-import { RootContext } from "../../contexts";
+import { RootContext } from "../contexts";
 
 export default function Section(props){
   const ref = useRef();

@@ -1,7 +1,6 @@
 import { useContext } from "react";
-import { RootContext } from "../../contexts";
-import { getIcon } from "../../utils";
-import classes from "./style.module.css";
+import { RootContext } from "../contexts";
+import { getIcon } from "../utils";
 
 export default function Links(){
   const {data} = useContext(RootContext);
@@ -12,7 +11,7 @@ export default function Links(){
 
 function LinkItem(props){
   const {alt, icon, link} = props;
-  return <a alt={alt} rel="noreferrer" href={link} target="_blank" className={`cursor-pointer transition opacity-50 hover:opacity-100 hover:scale-125 transform text-lg m-2 ${classes.LinkItem}`}>
+  return <a alt={alt} rel="noreferrer" href={link} target="_blank" className={`cursor-pointer transition opacity-50 hover:opacity-100 hover:scale-125 transform text-lg m-2`}>
     {getIcon(icon)}
   </a>
 }

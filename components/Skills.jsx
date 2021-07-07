@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { useContext } from "react";
-import { RootContext } from "../../contexts";
-import Icon from "../Icon";
-import Section from "../Section";
+import { RootContext } from "../contexts";
+import Icon from "./Icon";
+import Section from "./Section";
 
 export default function Skills(){
   const {data} = useContext(RootContext)

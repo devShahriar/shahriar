@@ -4,8 +4,8 @@ import { BiTimeFive } from "react-icons/bi";
 import { HiPuzzle } from "react-icons/hi";
 import { IoIosBook } from "react-icons/io";
 import colors from "tailwindcss/colors";
-import { RootContext } from "../../contexts";
-import classes from "./style.module.css";
+import { RootContext } from "../contexts";
+import classes from "./Navbar.module.css";
 
 export default function Navbar(){
   return <div className={`Navbar top-0 left-0 z-10 w-min rounded fixed text-primary-500 flex p-3 bg-secondary-800 justify-between ${classes.Navbar}`}>

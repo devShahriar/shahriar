@@ -11,7 +11,7 @@ export default function About(){
 
   return <Section name="About" className="">
     <div className="flex items-center justify-between flex-col-reverse md:flex-row">
-      <div>
+      <div className="md:mb-0 mb-5">
         <div className="text-5xl text-secondary-50 my-5">{data.about.title}</div>
         <div>
           <ReactTyped
@@ -31,13 +31,13 @@ export default function About(){
         <Image
           src="/landing.svg"
           alt="Landing"
-          width="500"
-          height="500"
+          width="400"
+          height="400"
         />
       </div>
     </div>
-    <div className="text-lg text-secondary-200 font-medium flex justify-end">
-      <div className="w-1/2">
+    <div className="text-lg text-secondary-200 font-medium flex justify-center">
+      <div className="md:w-1/2">
         {data.about.description}
       </div>
     </div>

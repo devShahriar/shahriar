@@ -35,7 +35,7 @@ function ExperienceItem(props) {
 
 export default function Experiences() {
   const { data } = useContext(RootContext)
-  return <Section className="experiences" header="Experiences" name="Experiences">
+  return <Section header="Experiences" name="Experiences">
     <div className="grid md:grid-cols-2 lg:grid-cols-3">
       {data.experiences.map((experience, index) => <ExperienceItem key={experience.organization + experience.role + experience.type+index} item={experience} />)}
     </div>

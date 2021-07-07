@@ -25,25 +25,23 @@ function SkillItem(props){
 export default function Skills(){
   const {data} = useContext(RootContext)
   return <Section header="Skills" name="Skills">  
-    <div>
-      <div className="flex justify-center animate-bounce">
-        <Image
-            src="/tech_stack.svg"
-            alt="Tech Stack"
-            width="500"
-            height="500"
-        />
-      </div>
-      <div className={`grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-${data.skills.length}`}>
-        {data.skills.map(({name, items})=>{
-          return <div key={name} className="m-2 bg-gradient-to-r hover:translate-y-2 hover:scale-110 transition duration-300 cursor-pointer transform from-secondary-800 via-secondary-800 to-secondary-900 bg-secondary-800 pl-5 rounded">
-            <div className="font-extrabold text-2xl pb-2 text-primary-500 my-5 animate-fade-in-down">{name}</div>
-            <div>
-              {items.map(item=><SkillItem item={item} key={item.label ?? item}/>)}
-            </div>
+    <div className="flex justify-center animate-slow-bounce">
+      <Image
+        src="/tech_stack.svg"
+        alt="Tech Stack"
+        width="350"
+        height="350"
+      />
+    </div>
+    <div className={`grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-${data.skills.length}`}>
+      {data.skills.map(({name, items})=>{
+        return <div key={name} className="m-2 bg-gradient-to-r hover:translate-y-2 hover:scale-110 transition duration-300 cursor-pointer transform from-secondary-800 via-secondary-800 to-secondary-900 bg-secondary-800 pl-5 rounded">
+          <div className="font-extrabold text-2xl pb-2 text-primary-500 my-5 animate-fade-in-down">{name}</div>
+          <div>
+            {items.map(item=><SkillItem item={item} key={item.label ?? item}/>)}
           </div>
-        })}
-      </div>
+        </div>
+      })}
     </div>
   </Section>
 }

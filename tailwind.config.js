@@ -4,7 +4,6 @@ const fadeInFromRightAnimation = 'fade-in-from-right 1s ease-in-out 1';
 const slowBounceAnimation = 'slow-bounce 2s ease-in-out infinite 1.5s';
 
 module.exports = {
-  mode: "jit",
   purge: ['./pages/**/*.{js,ts,jsx,tsx}','./components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -38,7 +37,7 @@ module.exports = {
         'fade-in-right': {
           '0%': {
             opacity: '0',
-            transform: 'translateX(-15px)'
+            transform: 'translateX(-25px)'
           },
           '100%': {
             opacity: '1',

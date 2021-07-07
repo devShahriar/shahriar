@@ -36,7 +36,7 @@ export default function About(){
         />
       </div>
     </div>
-    <div className="text-lg text-secondary-200 font-medium flex justify-center">
+    <div className="text-lg text-secondary-200 font-medium flex justify-end">
       <div className="md:w-1/2">
         {data.about.description}
       </div>

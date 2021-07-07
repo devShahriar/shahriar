@@ -8,7 +8,7 @@ import classes from "./style.module.css";
 
 export default function Navbar(){
   return <div className={`Navbar top-2/4 fixed text-primary-500 flex justify-between w-1/4 transform rotate-90 ${classes.Navbar}`}>
-    {[['About', <AiFillHome fill={colors.green[500]} size={15}/>], ['Skills', <HiPuzzle fill={colors.green[500]} size={15}/>], ['Experiences', <BiTimeFive fill={colors.green[500]} size={15}/>]].map(navbarItem => <NavbarItem key={navbarItem[0]} item={navbarItem}/>)}
+    {[['About', <AiFillHome fill={colors.green[500]} size={15} key={'about'}/>], ['Skills', <HiPuzzle fill={colors.green[500]} size={15} key={'skills'}/>], ['Experiences', <BiTimeFive fill={colors.green[500]} size={15} key={'experiences'}/>]].map(navbarItem => <NavbarItem key={navbarItem[0]} item={navbarItem}/>)}
   </div>
 }
 

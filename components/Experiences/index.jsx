@@ -4,7 +4,6 @@ import colors from "tailwindcss/colors";
 import { RootContext } from "../../contexts";
 import { parseDate } from "../../utils";
 import Section from "../Section";
-import Image from "next/image"
 
 function ExperienceItem(props) {
   const {
@@ -21,7 +20,7 @@ function ExperienceItem(props) {
   } = props;
 
   return <div className="flex mr-5 my-5">
-    <div className="mr-5"><Image alt={organization} src={thumbnail} width={100} height={100} /></div>
+    <div className="mr-5"><img alt={organization} src={thumbnail} width={100} height={100} /></div>
     <div>
       <div className="font-extrabold text-2xl text-primary-500 mb-1">{role}</div>
       <div className="font-bold text-xl mb-1 text-secondary-300">{organization}, {type}</div>

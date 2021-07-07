@@ -3,6 +3,7 @@ import { HiLocationMarker } from "react-icons/hi";
 import colors from "tailwindcss/colors";
 import { RootContext } from "../contexts";
 import { parseDate } from "../utils";
+import Grid from "./Grid";
 import Section from "./Section";
 
 function ExperienceItem(props) {
@@ -36,9 +37,9 @@ function ExperienceItem(props) {
 export default function Experiences() {
   const { data } = useContext(RootContext)
   return <Section header="Experiences" name="Experiences">
-    <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <Grid>
       {data.experiences.map((experience, index) => <ExperienceItem key={experience.organization + experience.role + experience.type+index} item={experience} />)}
-    </div>
+    </Grid>
   </Section>
 }
 

@@ -22,6 +22,7 @@ function SkillItem(props){
   </div>
 }
 
+
 export default function Skills(){
   const {data} = useContext(RootContext)
   return <Section className="skills" header="Skills" name="Skills">  

@@ -98,7 +98,9 @@ module.exports = {
     }
   },
   variants: {
-    extend: {},
+    extend: {
+      animation: ['hover'],
+    },
   },
   plugins: [
     require('tailwind-scrollbar')

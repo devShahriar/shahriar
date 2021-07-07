@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { useContext } from 'react';
+import { HiDocumentText } from "react-icons/hi";
 import ReactTyped from "react-typed";
+import colors from "tailwindcss/colors";
 import { RootContext } from '../../contexts';
 import Section from "../Section";
 
@@ -19,7 +21,10 @@ export default function About(){
         />
       </div>
       <div className="text-secondary-300 text-lg my-3">{data.about.bio}</div>
-      <button type="button" className="animate-wiggle bg-primary-500 px-8 py-3 text-lg rounded font-extrabold my-5 hover:scale-110 transform transition duration-300 ease-in-out">Get in touch</button>
+      <button type="button" className="animate-wiggle hover:animate-none bg-primary-500 px-8 py-3 text-lg rounded font-extrabold my-5 duration-300 ease-in-out flex items-center">
+        <HiDocumentText size={20} fill={colors.gray[900]} className="mr-2"/>
+        <a target="_blank" rel="noreferrer" href={data.about.resume}>View resume</a>
+      </button>
     </div>
     <div className="animate-fade-r-bounce">
       <Image

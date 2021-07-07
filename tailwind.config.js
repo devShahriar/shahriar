@@ -1,11 +1,11 @@
 const colors = require('tailwindcss/colors');
-
 const fadeInFromLeftAnimation = 'fade-in-from-left 1s ease-in-out 1';
 const fadeInFromRightAnimation = 'fade-in-from-right 1s ease-in-out 1';
 const slowBounceAnimation = 'slow-bounce 2s ease-in-out infinite 1.5s';
 
 module.exports = {
-  purge: ['./pages/**/*.{jsx}', './components/**/*.{jsx}'],
+  mode: "jit",
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}','./components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {

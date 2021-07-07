@@ -8,7 +8,7 @@ import { RootContext } from "../../contexts";
 import classes from "./style.module.css";
 
 export default function Navbar(){
-  return <div className={`Navbar top-0 left-0 z-10 w-min m-1 rounded fixed text-primary-500 flex p-3 bg-secondary-800 justify-between ${classes.Navbar}`}>
+  return <div className={`Navbar top-0 left-0 z-10 w-min rounded fixed text-primary-500 flex p-3 bg-secondary-800 justify-between ${classes.Navbar}`}>
     {[['About', <AiFillHome fill={colors.green[500]} size={15} key={'about'}/>], ['Skills', <HiPuzzle fill={colors.green[500]} size={15} key={'skills'}/>], ['Experiences', <BiTimeFive fill={colors.green[500]} size={15} key={'experiences'}/>], ['Courses', <IoIosBook fill={colors.green[500]} size={15} key={'courses'}/>]].map(navbarItem => <NavbarItem key={navbarItem[0]} item={navbarItem}/>)}
   </div>
 }

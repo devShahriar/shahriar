@@ -27,7 +27,7 @@ function ExperienceItem(props) {
       <Typography.H3>{role}</Typography.H3>
       <Typography.Body1>{organization}, {type}</Typography.Body1>
       <div className="flex items-center">
-        <HiLocationMarker fill={colors.red[500]} size={20} className="mr-1"/>
+        <HiLocationMarker fill={colors.red[500]} size={20} className="mr-1 mb-1"/>
         <Typography.Body2 primary>{location}</Typography.Body2>
       </div>
       <Typography.Subtitle1>

@@ -37,10 +37,11 @@ export default function About(){
         />
       </div>
     </div>
-    <div className="text-lg text-secondary-200 font-medium flex justify-end">
+    
+    <Typography.Body1 className={"font-medium flex justify-end"}>
       <div className="md:w-1/2">
         {data.about.description}
       </div>
-    </div>
+    </Typography.Body1>
   </Section>
 }

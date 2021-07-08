@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { AiFillHome } from "react-icons/ai";
 import { BiTimeFive } from "react-icons/bi";
 import { HiPuzzle } from "react-icons/hi";
@@ -8,8 +8,9 @@ import { RootContext } from "../contexts";
 import classes from "./Navbar.module.css";
 
 export default function Navbar(){
+  const {currentSection} = useContext(RootContext);
   return <div className={`Navbar top-0 left-0 z-10 w-min rounded fixed text-primary-500 flex p-3 bg-secondary-800 justify-between ${classes.Navbar}`}>
-    {[['About', <AiFillHome fill={colors.green[500]} size={15} key={'about'}/>], ['Skills', <HiPuzzle fill={colors.green[500]} size={15} key={'skills'}/>], ['Experiences', <BiTimeFive fill={colors.green[500]} size={15} key={'experiences'}/>], ['Courses', <IoIosBook fill={colors.green[500]} size={15} key={'courses'}/>]].map(navbarItem => <NavbarItem key={navbarItem[0]} item={navbarItem}/>)}
+    {[['About', AiFillHome], ['Skills', HiPuzzle], ['Experiences', BiTimeFive], ['Courses', IoIosBook]].map(([label, icon]) => <NavbarItem key={label} item={[label, React.createElement(icon, {fill: label === currentSection ? colors.gray[900] : colors.green[500], size: 15, key: label})]}/>)}
   </div>
 }
 

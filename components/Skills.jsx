@@ -12,8 +12,8 @@ export default function Skills(){
       <Image
         src="/tech_stack.svg"
         alt="Tech Stack"
-        width="250"
-        height="250"
+        width="500"
+        height="500"
       />
     </div>
     <div className={`grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-${data.skills.length}`}>

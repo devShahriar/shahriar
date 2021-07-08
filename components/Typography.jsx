@@ -13,7 +13,7 @@ const Typography = {
   },
   Body1(props){
     const {className = '', bold=false, primary=false, children} = props;
-    return <div className={`text-xl mb-2 ${bold ? 'font-bold' : ''} ${!primary ? 'text-secondary-200' : 'text-primary-500' } ${className}`}>{children}</div>
+    return <div className={`text-xl mb-2 ${bold ? 'font-bold' : 'font-medium'} ${!primary ? 'text-secondary-200' : 'text-primary-500' } ${className}`}>{children}</div>
   },
   Body2(props){
     const {className = '', bold=false, primary=false, children} = props;

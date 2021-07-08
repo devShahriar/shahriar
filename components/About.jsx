@@ -4,6 +4,7 @@ import { HiDocumentText } from "react-icons/hi";
 import ReactTyped from "react-typed";
 import colors from "tailwindcss/colors";
 import { RootContext } from '../contexts';
+import Button from "./Button";
 import Section from "./Section";
 import Typography from "./Typography";
 
@@ -22,10 +23,10 @@ export default function About(){
           />
         </Typography.H2>
         <div className="text-secondary-300 text-lg my-3">{data.about.bio}</div>
-        <button type="button" className="animate-wiggle hover:animate-none bg-primary-500 px-8 py-3 text-lg rounded font-extrabold my-5 duration-300 ease-in-out flex items-center">
+        <Button className="animate-wiggle hover:animate-none duration-300 ease-in-out">
           <HiDocumentText size={20} fill={colors.gray[900]} className="mr-2"/>
           <a target="_blank" rel="noreferrer" href={data.about.resume}>View resume</a>
-        </button>
+        </Button>
       </div>
       <div className="animate-fade-r-bounce">
         <Image

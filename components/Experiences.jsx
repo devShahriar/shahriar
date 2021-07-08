@@ -21,7 +21,7 @@ function ExperienceItem(props) {
     }
   } = props;
 
-  return <div className="flex mr-5 my-5">
+  return <div className="flex my-5">
     <div className="mr-5"><img alt={organization} src={thumbnail} width={100} height={100} /></div>
     <div>
       <Typography.H3>{role}</Typography.H3>
@@ -33,9 +33,7 @@ function ExperienceItem(props) {
       <Typography.Subtitle1>
         {parseDate(start_date)} - {end_date ? parseDate(end_date) : 'Present'}
       </Typography.Subtitle1>
-      <ol className="text-secondary-200 list-inside list-decimal text-lg">{
-        descriptions.map(description=><Typography.ListItem key={description}>{description}</Typography.ListItem>)
-      }</ol>
+      <Typography.OrderedList items={descriptions}/>
     </div>
   </div>
 }

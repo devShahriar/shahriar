@@ -26,6 +26,12 @@ const Typography = {
   ListItem(props){
     const {className = '', bold=false, primary=false, children} = props;
     return <li className={`text-lg mb-1 ${bold ? 'font-bold' : ''} ${!primary ? 'text-secondary-200' : 'text-primary-500' } ${className}`}>{children}</li>
+  },
+  OrderedList(props){
+    const {items, ...listItemProps} = props;
+    return <ol className="list-inside list-decimal">{
+      items.map(item=><Typography.ListItem key={item} {...listItemProps}>{item}</Typography.ListItem>)
+    }</ol>
   }
 }
 

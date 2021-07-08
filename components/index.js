@@ -1,4 +1,5 @@
 import About from "./About"
+import Button from "./Button"
 import Courses from "./Courses"
 import Experiences from "./Experiences"
 import Grid from "./Grid"
@@ -9,6 +10,7 @@ import Section from "./Section"
 import Skills from "./Skills"
 
 export {
+  Button,
   Grid,
   Icon,
   Courses,

@@ -107,7 +107,7 @@ const data = {
       location: "Dhaka, Bangladesh",
       descriptions: [
         "dasdasd",
-        "dasdasds",
+        "dasdasds dasdasds dasdasds dasd",
       ]
     },
     {

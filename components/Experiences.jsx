@@ -25,7 +25,7 @@ function ExperienceItem(props) {
     <div className="mr-5"><img alt={organization} src={thumbnail} width={100} height={100} /></div>
     <div>
       <Typography.H3>{role}</Typography.H3>
-      <div className="font-bold text-xl mb-1 text-secondary-300">{organization}, {type}</div>
+      <Typography.Body1>{organization}, {type}</Typography.Body1>
       <div className="flex items-center"><HiLocationMarker fill={colors.red[500]} className="mr-1"/><span className="text-primary-500 text-base">{location}</span></div>
       <div className="text-secondary-400 text-base my-2">{parseDate(start_date)} - {end_date ? parseDate(end_date) : 'Present'}</div>
       <ol className="text-secondary-200 list-inside list-decimal text-lg">{

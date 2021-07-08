@@ -26,10 +26,15 @@ function ExperienceItem(props) {
     <div>
       <Typography.H3>{role}</Typography.H3>
       <Typography.Body1>{organization}, {type}</Typography.Body1>
-      <div className="flex items-center"><HiLocationMarker fill={colors.red[500]} className="mr-1"/><span className="text-primary-500 text-base">{location}</span></div>
-      <div className="text-secondary-400 text-base my-2">{parseDate(start_date)} - {end_date ? parseDate(end_date) : 'Present'}</div>
+      <div className="flex items-center">
+        <HiLocationMarker fill={colors.red[500]} size={20} className="mr-1"/>
+        <Typography.Body2 primary>{location}</Typography.Body2>
+      </div>
+      <Typography.Subtitle1>
+        {parseDate(start_date)} - {end_date ? parseDate(end_date) : 'Present'}
+      </Typography.Subtitle1>
       <ol className="text-secondary-200 list-inside list-decimal text-lg">{
-        descriptions.map(description=><li key={description}>{description}</li>)
+        descriptions.map(description=><Typography.ListItem key={description}>{description}</Typography.ListItem>)
       }</ol>
     </div>
   </div>

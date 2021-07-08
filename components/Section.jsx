@@ -3,9 +3,10 @@ import { RootContext } from "../contexts";
 import Typography from "./Typography";
 
 export default function Section(props){
+  const {name, header, children} = props;
   const ref = useRef();
-  const {setCurrentSection} = useContext(RootContext);
-
+  const {currentSection, setCurrentSection} = useContext(RootContext);
+  const isCurrentlyActive = currentSection === name;
   useEffect(()=>{
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -14,16 +15,17 @@ export default function Section(props){
             ref.current.classList.add('animate-fade-in-right')
             ref.current.classList.remove('opacity-0')
           }
-          setCurrentSection(props.name)
+          setCurrentSection(name)
         }
       });
     }, { threshold: 0.65 });
     observer.observe(ref.current);
   }, []);
 
-  const {header} = props;
   return <div ref={ref} className={`Section border-b-2 border-primary-500 mx-24 py-20 opacity-0 Section-${props.name} ${props.className ?? ''}`}>
-    {header && <Typography.H1>{header}</Typography.H1>}
-    {props.children}
+    {typeof children === "function" ? <>
+      {header && <Typography.H1>{header}</Typography.H1>}
+      {children({isCurrentlyActive})}
+    </> : children}
   </div>
 }

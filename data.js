@@ -72,14 +72,38 @@ const data = {
         "Go",
         "Graphql"
       ],
-      video_url: 'https://www.youtube.com/watch?v=YS4e4q9oBaU',
+      video_url: 'https://www.youtube.com/embed/YS4e4q9oBaU',
       image_url: 'https://i.morioh.com/2020/03/24/fa7ceac4ffd5.jpg',
-      description: "This course will help you learn everything that go has to offer",
+      description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est",
       start_date: "2021-06-14",
       registration_link: 'https://localhost:5001/graphql',
       contents: [
         {
           title: 'Go variables',
+          description: 'In this section we will learn about go variables'
+        },
+        {
+          title: 'Go decorators',
+          description: 'In this section we will learn about go variables'
+        },
+        {
+          title: 'Go structs',
+          description: 'In this section we will learn about go variables'
+        },
+        {
+          title: 'Go enumerators',
+          description: 'In this section we will learn about go variables'
+        },
+        {
+          title: 'Go iterators',
+          description: 'In this section we will learn about go variables'
+        },
+        {
+          title: 'Go concurrency',
+          description: 'In this section we will learn about go variables'
+        },
+        {
+          title: 'Go channels',
           description: 'In this section we will learn about go variables'
         }
       ],
@@ -91,7 +115,7 @@ const data = {
         "Go",
         "Graphql"
       ],
-      video_url: 'https://www.youtube.com/watch?v=YS4e4q9oBaU',
+      video_url: 'https://www.youtube.com/embed/YS4e4q9oBaU',
       image_url: 'https://i.morioh.com/2020/03/24/fa7ceac4ffd5.jpg',
       description: "This course will help you learn everything that go has to offer",
       start_date: "2021-06-14",

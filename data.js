@@ -1,3 +1,5 @@
+import slugify from "slugify";
+
 const data = {
   name: "Shahriar Islam",
   about: {
@@ -80,7 +82,8 @@ const data = {
           title: 'Go variables',
           description: 'In this section we will learn about go variables'
         }
-      ]
+      ],
+      slug: slugify("Go beginners").toLowerCase()
     },
     {
       title: "Go Intermediate",
@@ -98,7 +101,8 @@ const data = {
           title: 'Go variables',
           description: 'In this section we will learn about go variables'
         }
-      ]
+      ],
+      slug: slugify("Go Intermediate").toLowerCase()
     },
     {
       title: "Go Advanced",
@@ -116,7 +120,8 @@ const data = {
           title: 'Go variables',
           description: 'In this section we will learn about go variables'
         }
-      ]
+      ],
+      slug: slugify("Go Advanced").toLowerCase()
     }
   ],
   experiences: [

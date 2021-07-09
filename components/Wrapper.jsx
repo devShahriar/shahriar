@@ -7,5 +7,4 @@ export default function Wrapper(props){
     <Links />
     {children}
   </div>
-
 }

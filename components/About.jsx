@@ -23,7 +23,7 @@ export default function About(){
           />
         </Typography.H2>
         <div className="text-secondary-300 text-lg my-3">{data.about.bio}</div>
-        <Button className="animate-wiggle hover:animate-none duration-300 ease-in-out">
+        <Button className="animate-wiggle hover:animate-none duration-300 ease-in-out ml-0">
           <HiDocumentText size={20} fill={colors.gray[900]} className="mr-2"/>
           <a target="_blank" rel="noreferrer" href={data.about.resume}>View resume</a>
         </Button>

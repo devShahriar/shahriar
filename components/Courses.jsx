@@ -35,7 +35,7 @@ export default function Courses(){
 
   return <Section header="Courses" name="Courses">
     <Grid>
-      {Array.from(data.courses.values()).map((course) => <Card scaleOnHover={false} key={course.title} header={course.title} content={<CourseItem item={course} />}/>)}
+      {Array.from(data.courses.values()).map((course) => <Card classNames={{header: 'uppercase'}} headerElement='H2' scaleOnHover={false} key={course.title} header={course.title} content={<CourseItem item={course} />}/>)}
     </Grid>
   </Section>
 }

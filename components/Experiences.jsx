@@ -22,7 +22,7 @@ function ExperienceItem(props) {
   } = props;
 
   return <div className="flex my-5">
-    <div className="mr-5"><img alt={organization} src={thumbnail} width={100} height={100} /></div>
+    <div className="mr-5"><img loading="lazy" alt={organization} src={thumbnail} width={100} height={100} /></div>
     <div>
       <Typography.H3>{role}</Typography.H3>
       <Typography.Body1>{organization}, {type}</Typography.Body1>

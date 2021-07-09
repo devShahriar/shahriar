@@ -1,15 +1,15 @@
 const Typography = {
   H1(props){
-    const {className = '', secondary=false, children} = props;
-    return <div className={`text-5xl font-extrabold ${secondary ? 'text-secondary-100' : 'text-primary-500' } mb-5 ${className}`}>{children}</div>
+    const {className = '', secondary=false, children, capitalizeHeader = false} = props;
+    return <div className={`text-5xl ${capitalizeHeader ? 'uppercase' : ''} font-extrabold ${secondary ? 'text-secondary-100' : 'text-primary-500' } mb-5 ${className}`}>{children}</div>
   },
   H2(props){
-    const {className = '', secondary=false, children} = props;
-    return <div className={`text-3xl font-bold ${secondary ? 'text-secondary-100' : 'text-primary-500' } mb-3 ${className}`}>{children}</div>
+    const {className = '', secondary=false, children, capitalizeHeader = false} = props;
+    return <div className={`text-3xl ${capitalizeHeader ? 'uppercase' : ''} font-bold ${secondary ? 'text-secondary-100' : 'text-primary-500' } mb-3 ${className}`}>{children}</div>
   },
   H3(props){
-    const {className = '', secondary=false, children} = props;
-    return <div className={`text-2xl font-bold ${secondary ? 'text-secondary-100' : 'text-primary-500' } mb-2 ${className}`}>{children}</div>
+    const {className = '', secondary=false, children, capitalizeHeader = false} = props;
+    return <div className={`text-2xl ${capitalizeHeader ? 'uppercase' : ''} font-bold ${secondary ? 'text-secondary-100' : 'text-primary-500' } mb-2 ${className}`}>{children}</div>
   },
   Body1(props){
     const {className = '', bold=false, primary=false, children} = props;

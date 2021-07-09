@@ -1,7 +1,7 @@
 const Typography = {
   H1(props){
     const {className = '', secondary=false, children} = props;
-    return <div className={`text-5xl uppercase font-extrabold ${secondary ? 'text-secondary-100' : 'text-primary-500' } mb-5 ${className}`}>{children}</div>
+    return <div className={`text-5xl font-extrabold ${secondary ? 'text-secondary-100' : 'text-primary-500' } mb-5 ${className}`}>{children}</div>
   },
   H2(props){
     const {className = '', secondary=false, children} = props;

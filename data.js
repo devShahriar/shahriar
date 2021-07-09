@@ -110,7 +110,6 @@ const data = {
         "Go",
         "Graphql"
       ],
-      video_url: 'https://www.youtube.com/watch?v=YS4e4q9oBaU',
       image_url: 'https://i.morioh.com/2020/03/24/fa7ceac4ffd5.jpg',
       description: "This course will help you learn everything that go has to offer",
       start_date: "2021-06-14",

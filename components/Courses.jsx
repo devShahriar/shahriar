@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { RootContext } from "../contexts";
+import Card from "./Card";
 import Grid from "./Grid";
 import Logos from "./Logos";
 import Section from "./Section";
@@ -8,16 +9,15 @@ import Typography from "./Typography";
 function CourseItem(props){
   const {item} = props;
   return <div>
-    <Typography.H2>{item.title}</Typography.H2>
-    <div>
+    <div className="mb-3">
       <Logos items={item.topics} direction={"rows"}/>
     </div>
-    <div>
+    <div className="my-5">
       <img src={item.image_url} alt={"Image"}/>
     </div>
-    <Typography.Body1>
+    <Typography.Body2>
       {item.description}
-    </Typography.Body1>
+    </Typography.Body2>
   </div>
 }
 
@@ -26,7 +26,7 @@ export default function Courses(){
 
   return <Section header="Courses" name="Courses">
     <Grid>
-      {data.courses.map((course) => <CourseItem key={course.title} item={course} />)}
+      {data.courses.map((course) => <Card scaleOnHover={false} key={course.title} header={course.title} content={<CourseItem item={course} />}/>)}
     </Grid>
   </Section>
 }

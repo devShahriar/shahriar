@@ -10,10 +10,10 @@ export default function Icon(props){
     icon = getIcon(item.icon ?? item.label)
     label = item.label;
   }
-  return <div className={`text-primary-500 ${direction === 'column' ? 'my-2' : 'mx-2'}`} key={label}>
+  return <div className={`text-primary-500 ${direction === 'column' ? 'mb-4' : 'mr-4'}`} key={label}>
     <div className="flex items-center">
-      <span className="mr-3 hover:scale-125 transform transition">{icon}</span>
-      <span className="flex-grow text-lg font-bold">{label}</span>
+      <span className="mr-2 hover:scale-125 transform transition">{icon}</span>
+      <span className="flex-grow text-lg font-medium">{label}</span>
     </div>
   </div>
 }

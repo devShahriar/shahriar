@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import { useContext } from "react";
 import { RootContext } from "../contexts";
+import Card from "./Card";
 import Grid from "./Grid";
 import Logos from "./Logos";
 import Section from "./Section";
-import Typography from './Typography';
 
 export default function Skills(){
   const {data} = useContext(RootContext)
@@ -20,12 +20,7 @@ export default function Skills(){
           />
         </div>
         <Grid fullWidth>
-          {data.skills.map(({name, items})=>{
-            return <div key={name} className="m-2 bg-gradient-to-r hover:scale-105 transition duration-200 cursor-pointer transform from-secondary-800 via-secondary-800 to-secondary-900 bg-secondary-800 p-5 rounded">
-              <Typography.H3>{name}</Typography.H3>
-              <Logos items={items}/>
-            </div>
-          })}
+          {data.skills.map(({name, items})=><Card key={name} header={name} content={<Logos items={items}/>}/>)}
         </Grid>
       </>
     }}

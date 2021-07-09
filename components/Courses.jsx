@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { useContext } from "react";
-import slugify from "slugify";
 import { RootContext } from "../contexts";
 import Button from "./Button";
 import Card from "./Card";
@@ -23,7 +22,7 @@ function CourseItem(props){
     </Typography.Body2>
     <div className="flex items-center justify-center">
       <Button size="medium" scaleOnHover>
-        <Link href={`/courses/${slugify(item.title.toLowerCase())}`}>
+        <Link href={`/courses/${item.slug}`}>
           View details
         </Link>
       </Button>
@@ -36,7 +35,7 @@ export default function Courses(){
 
   return <Section header="Courses" name="Courses">
     <Grid>
-      {data.courses.map((course) => <Card scaleOnHover={false} key={course.title} header={course.title} content={<CourseItem item={course} />}/>)}
+      {Array.from(data.courses.values()).map((course, index) => <Card className={index === 0 ? 'ml-0' : ''} scaleOnHover={false} key={course.title} header={course.title} content={<CourseItem item={course} />}/>)}
     </Grid>
   </Section>
 }

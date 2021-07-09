@@ -1,13 +1,23 @@
 import { useContext } from "react";
 import { RootContext } from "../contexts";
 import Grid from "./Grid";
+import Logos from "./Logos";
 import Section from "./Section";
+import Typography from "./Typography";
 
 function CourseItem(props){
   const {item} = props;
   return <div>
-    <div className="">{item.title}</div>
-    <div></div>
+    <Typography.H2>{item.title}</Typography.H2>
+    <div>
+      <Logos items={item.topics} direction={"rows"}/>
+    </div>
+    <div>
+      <img src={item.image_url} alt={"Image"}/>
+    </div>
+    <Typography.Body1>
+      {item.description}
+    </Typography.Body1>
   </div>
 }
 

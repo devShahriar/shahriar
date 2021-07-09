@@ -1,5 +1,6 @@
 import About from "./About"
 import Button from "./Button"
+import Card from "./Card"
 import Courses from "./Courses"
 import Experiences from "./Experiences"
 import Grid from "./Grid"
@@ -11,6 +12,7 @@ import Section from "./Section"
 import Skills from "./Skills"
 
 export {
+  Card,
   Logos,
   Button,
   Grid,

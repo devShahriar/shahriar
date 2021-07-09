@@ -10,8 +10,10 @@ import Logos from "./Logos"
 import Navbar from "./Navbar"
 import Section from "./Section"
 import Skills from "./Skills"
+import Wrapper from "./Wrapper"
 
 export {
+  Wrapper,
   Card,
   Logos,
   Button,

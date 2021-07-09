@@ -1,18 +1,14 @@
 import { BiUpArrowCircle } from "react-icons/bi";
 import colors from "tailwindcss/colors";
-import { About, Courses, Experiences, Links, Navbar, Skills } from "../components";
+import { About, Courses, Experiences, Skills, Wrapper } from "../components";
 
 export default function Home() {
   return (
-    <div className="font-mono bg-secondary-900 h-screen overflow-auto scrollbar scrollbar-thumb-green-500 scrollbar-track-gray-100">
-      <Navbar />
-      <Links />
-      <div>
-        <About />
-        <Skills />
-        <Experiences />
-        <Courses />
-      </div>
+    <Wrapper>
+      <About />
+      <Skills />
+      <Experiences />
+      <Courses />
       <BiUpArrowCircle onClick={()=>{
         const sectionElement = document.querySelector(`.Section-About`);
         if(sectionElement)
@@ -20,6 +16,6 @@ export default function Home() {
             behavior: 'smooth'
           });
       }} className="fixed bottom-0 p-3 right-0 cursor-pointer animate-slow-bounce" size={50} fill={colors.green[500]}/>
-    </div>
+    </Wrapper>
   )
 }

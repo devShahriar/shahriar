@@ -5,11 +5,13 @@ import Experiences from "./Experiences"
 import Grid from "./Grid"
 import Icon from "./Icon"
 import Links from "./Links"
+import Logos from "./Logos"
 import Navbar from "./Navbar"
 import Section from "./Section"
 import Skills from "./Skills"
 
 export {
+  Logos,
   Button,
   Grid,
   Icon,

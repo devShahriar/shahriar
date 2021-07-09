@@ -26,6 +26,9 @@ export default function Section(props){
     {typeof children === "function" ? <>
       {header && <Typography.H1>{header}</Typography.H1>}
       {children({isCurrentlyActive})}
-    </> : children}
+    </> : <>
+      {header && <Typography.H1>{header}</Typography.H1>}
+      {children}
+    </>}
   </div>
 }

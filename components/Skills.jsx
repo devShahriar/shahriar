@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { useContext } from "react";
 import { RootContext } from "../contexts";
 import Grid from "./Grid";
-import Icon from "./Icon";
+import Logos from "./Logos";
 import Section from "./Section";
 import Typography from './Typography';
 
@@ -19,13 +19,11 @@ export default function Skills(){
             height="350"
           />
         </div>
-        <Grid>
+        <Grid fullWidth>
           {data.skills.map(({name, items})=>{
             return <div key={name} className="m-2 bg-gradient-to-r hover:scale-105 transition duration-200 cursor-pointer transform from-secondary-800 via-secondary-800 to-secondary-900 bg-secondary-800 p-5 rounded">
               <Typography.H3>{name}</Typography.H3>
-              <div>
-                {items.map(item=><Icon item={item} key={item.label ?? item}/>)}
-              </div>
+              <Logos items={items}/>
             </div>
           })}
         </Grid>

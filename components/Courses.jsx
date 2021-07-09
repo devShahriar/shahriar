@@ -10,17 +10,17 @@ import Typography from "./Typography";
 
 function CourseItem(props){
   const {item} = props;
-  return <div>
+  return <div className="flex flex-col">
     <div className="mb-3">
       <Logos items={item.topics} direction={"rows"}/>
     </div>
-    <div className="my-5">
-      <img src={item.image_url} alt={"Image"}/>
+    <div className="my-5 flex">
+      <img loading="lazy" src={item.image_url} alt={"Image"}/>
     </div>
     <Typography.Body2>
-      {item.description}
+      {item.short_description}
     </Typography.Body2>
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center justify-end">
       <Button size="medium" scaleOnHover>
         <Link href={`/courses/${item.slug}`}>
           View details
@@ -35,7 +35,7 @@ export default function Courses(){
 
   return <Section header="Courses" name="Courses">
     <Grid>
-      {Array.from(data.courses.values()).map((course, index) => <Card className={index === 0 ? 'ml-0' : ''} scaleOnHover={false} key={course.title} header={course.title} content={<CourseItem item={course} />}/>)}
+      {Array.from(data.courses.values()).map((course) => <Card scaleOnHover={false} key={course.title} header={course.title} content={<CourseItem item={course} />}/>)}
     </Grid>
   </Section>
 }

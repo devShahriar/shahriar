@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { useContext } from "react";
 import { RootContext } from "../contexts";
 import Card from "./Card";
@@ -11,12 +10,12 @@ export default function Skills(){
   return <Section header="Skills" name="Skills">  
     {({isCurrentlyActive})=>{
       return <>
-        <div className="flex justify-center animate-slow-bounce">
-          <Image
-            src="/tech_stack.svg"
+        <div className="flex justify-center animate-slow-bounce my-5">
+          <img src="/tech_stack.svg"
             alt="Tech Stack"
             width="350"
             height="350"
+            loading="lazy"
           />
         </div>
         <Grid fullWidth>

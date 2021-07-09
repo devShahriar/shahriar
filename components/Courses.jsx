@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import { useContext } from "react";
+import slugify from "slugify";
 import { RootContext } from "../contexts";
 import Button from "./Button";
 import Card from "./Card";
@@ -21,7 +23,9 @@ function CourseItem(props){
     </Typography.Body2>
     <div className="flex items-center justify-center">
       <Button size="medium" scaleOnHover>
-        View details
+        <Link href={`/courses/${slugify(item.title.toLowerCase())}`}>
+          View details
+        </Link>
       </Button>
     </div>
   </div>

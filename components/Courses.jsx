@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { RootContext } from "../contexts";
+import Button from "./Button";
 import Card from "./Card";
 import Grid from "./Grid";
 import Logos from "./Logos";
@@ -18,6 +19,11 @@ function CourseItem(props){
     <Typography.Body2>
       {item.description}
     </Typography.Body2>
+    <div className="flex items-center justify-center">
+      <Button size="medium" scaleOnHover>
+        View details
+      </Button>
+    </div>
   </div>
 }
 

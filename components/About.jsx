@@ -38,8 +38,8 @@ export default function About(){
       </div>
     </div>
     
-    <Typography.Body1 className={"font-medium flex justify-end"}>
-      <div className="md:w-1/2">
+    <Typography.Body1 className={"flex justify-end"}>
+      <div className="md:w-1/2 font-medium">
         {data.about.description}
       </div>
     </Typography.Body1>

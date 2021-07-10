@@ -13,7 +13,10 @@ export default function Section(props){
         if (entry.isIntersecting) {
           if(!ref.current.classList.contains('animate-fade-in-right')){
             ref.current.classList.add('animate-fade-in-right')
-            ref.current.classList.remove('opacity-0')
+            ref.current.classList.remove('opacity-0');
+            if(name === "Skills"){
+              document.querySelector('.tech_stack').classList.remove('hidden')
+            }
           }
           setCurrentSection(name)
         }

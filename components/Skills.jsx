@@ -13,7 +13,7 @@ export default function Skills(){
         alt="Tech Stack"
         width="500"
         height="500"
-        loading="lazy"
+        className="hidden tech_stack"
       />
     </div>
     <Grid className={'xl:grid-cols-6'}>

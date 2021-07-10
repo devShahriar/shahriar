@@ -20,9 +20,9 @@ function ExperienceItem(props) {
       location 
     }
   } = props;
-
-  return <div className="flex my-5">
-    <div className="mr-5"><img loading="lazy" alt={organization} src={thumbnail} width={100} height={100} /></div>
+  
+  return <div className="flex my-5 flex-col usm:flex-row">
+    <div className="mb-5 flex justify-center usm:mr-5" style={{width: 100, height: 100}}><img loading="lazy" alt={organization} src={thumbnail} /></div>
     <div>
       <Typography.H3>{role}</Typography.H3>
       <Typography.Body1>{organization}, {type}</Typography.Body1>

@@ -15,6 +15,9 @@ module.exports = {
       'mono': ['Inconsolata', 'monospace', 'Menlo', 'Consolas', 'Monaco'],
     },
     extend: {
+      screens: {
+        'usm': '450px'
+      },
       keyframes: {
         wiggle: {
           '0%, 100%': {

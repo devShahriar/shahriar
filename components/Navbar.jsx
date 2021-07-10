@@ -18,7 +18,7 @@ function NavbarItem(props){
   const {currentSection, setCurrentSection} = useContext(RootContext);
   const {item: [label, icon]} = props;
   const isCurrentSection = currentSection === label;
-  return <span className={`flex flex-grow px-3 py-2 sm:px-5 sm:py-3 items-center cursor-pointer justify-center NavbarItem-${label} ${classes.NavbarItem} ${isCurrentSection ? 'font-bold text-xl bg-primary-500' : 'text-base'}`} onClick={()=>{
+  return <span className={`flex flex-grow px-3 py-3 sm:px-5 usm:py-3 sm:py-2 items-center cursor-pointer justify-center NavbarItem-${label} ${classes.NavbarItem} ${isCurrentSection ? 'font-bold text-xl bg-primary-500' : 'text-base'}`} onClick={()=>{
     setCurrentSection(label)
     const sectionElement = document.querySelector(`.Section-${label}`);
     if(sectionElement)
@@ -27,6 +27,6 @@ function NavbarItem(props){
       });
   }}>
     <span className="mr-2">{icon}</span>
-    <span className={`${isCurrentSection ? 'text-secondary-900' : 'text-primary-500'}`}>{label}</span>
+    <span className={`hidden usm:block ${isCurrentSection ? 'text-secondary-900' : 'text-primary-500'}`}>{label}</span>
   </span>
 }

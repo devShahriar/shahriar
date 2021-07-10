@@ -1,7 +1,7 @@
 const colors = require('tailwindcss/colors');
 const fadeInFromLeftAnimation = 'fade-in-from-left 1s ease-in-out 1';
 const fadeInFromRightAnimation = 'fade-in-from-right 1s ease-in-out 1';
-const slowBounceAnimation = 'slow-bounce 2s ease-in-out infinite 1.5s';
+const slowBounceAnimation = 'slow-bounce 2s ease-in-out infinite';
 
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}','./components/**/*.{js,ts,jsx,tsx}'],
@@ -26,26 +26,6 @@ module.exports = {
           '50%': {
             transform: 'rotate(1.5deg)'
           },
-        },
-        'fade-in-down': {
-          '0%': {
-            opacity: '0',
-            transform: 'translateY(-15px)'
-          },
-          '100%': {
-            opacity: '1',
-            transform: 'translateY(0)'
-          }
-        },
-        'fade-in-right': {
-          '0%': {
-            opacity: '0',
-            transform: 'translateX(-25px)'
-          },
-          '100%': {
-            opacity: '1',
-            transform: 'translateX(0)'
-          }
         },
         'fade-in-from-right': {
           '0%': {
@@ -89,8 +69,6 @@ module.exports = {
       },
       animation: {
         wiggle: 'wiggle 1s ease-in-out infinite',
-        'fade-in-down': 'fade-in-down 0.5s ease-out 1',
-        'fade-in-right': 'fade-in-right .5s ease-out 1',
         'fade-in-from-right': fadeInFromRightAnimation,
         'fade-in-from-left': fadeInFromLeftAnimation,
         'slow-bounce': slowBounceAnimation,

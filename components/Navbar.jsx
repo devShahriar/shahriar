@@ -26,7 +26,7 @@ function NavbarItem(props){
         behavior: 'smooth'
       });
   }}>
-    <span className="mr-2">{icon}</span>
+    <span className="mr-0 usm:mr-2">{icon}</span>
     <span className={`hidden usm:block ${isCurrentSection ? 'text-secondary-900' : 'text-primary-500'}`}>{label}</span>
   </span>
 }

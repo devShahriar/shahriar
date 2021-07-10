@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { useContext } from 'react';
 import { HiDocumentText } from "react-icons/hi";
 import ReactTyped from "react-typed";
@@ -12,8 +11,8 @@ export default function About(){
   const {data} = useContext(RootContext)
 
   return <Section name="About" className="">
-    <div className="flex items-center justify-between flex-col-reverse md:flex-row">
-      <div className="md:mb-0 mb-5">
+    <div className="flex items-center justify-between flex-col-reverse lg:flex-row">
+      <div className="lg:mb-0 mb-5">
         <Typography.H1 secondary>{data.about.title}</Typography.H1>
         <Typography.H2>
           <ReactTyped
@@ -28,8 +27,9 @@ export default function About(){
           <a target="_blank" rel="noreferrer" href={data.about.resume}>View resume</a>
         </Button>
       </div>
-      <div className="animate-fade-r-bounce">
-        <Image
+      <div className="animate-slow-bounce my-5 flex justify-center">
+        <img
+          className="landing"
           src="/landing.svg"
           alt="Landing"
           width="400"
@@ -39,7 +39,7 @@ export default function About(){
     </div>
     
     <Typography.Body1 className={"flex justify-end"}>
-      <div className="md:w-1/2 font-medium">
+      <div className="lg:w-1/2 font-medium">
         {data.about.description}
       </div>
     </Typography.Body1>

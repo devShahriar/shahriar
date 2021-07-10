@@ -14,6 +14,11 @@ export default function Section(props){
           if(!ref.current.classList.contains('animate-fade-in-right')){
             ref.current.classList.add('animate-fade-in-right')
             ref.current.classList.remove('opacity-0');
+            if(name === "Skills"){
+              document.querySelector('.tech_stack').classList.add('animate-fade-in-from-right')
+            } else if(name === "About"){
+              document.querySelector('.landing').classList.add('animate-fade-in-from-left')
+            }
           }
           setCurrentSection(name)
         }

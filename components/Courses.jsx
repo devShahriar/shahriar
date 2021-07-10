@@ -11,9 +11,7 @@ import Typography from "./Typography";
 function CourseItem(props){
   const {item} = props;
   return <div className="flex flex-col">
-    <div className="mb-3">
-      <Logos items={item.topics} direction={"rows"}/>
-    </div>
+    <Logos items={item.topics} direction={"rows"}/>
     <div className="my-5 flex">
       <img loading="lazy" src={item.image_url} alt={"Image"}/>
     </div>
@@ -21,7 +19,7 @@ function CourseItem(props){
       {item.short_description}
     </Typography.Body2>
     <div className="flex items-center justify-center justify-end">
-      <Button size="medium" scaleOnHover>
+      <Button size="medium" scaleOnHover className={"mb-0"}>
         <Link href={`/courses/${item.slug}`}>
           View details
         </Link>

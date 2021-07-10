@@ -18,8 +18,11 @@ const Course = () => {
       <div className="my-5 flex flex-col items-center">
         <Typography.H1>{course.title}</Typography.H1>
         <Logos items={course.topics} direction={"rows"}/>
+        <div className="flex items-center">
           <Typography.Subtitle1>Starts at {course.start_date}</Typography.Subtitle1>
-          <Typography.Link link={course.registration_link}>Registration Link</Typography.Link>
+          {course.end_date && <Typography.Subtitle1 className="ml-5">Ends at {course.end_date}</Typography.Subtitle1>}
+        </div>
+        <Typography.Link link={course.registration_link}>Registration Link</Typography.Link>
       </div>
       <div className="my-5 mb-10 flex justify-center">
         <div style={{
@@ -48,7 +51,12 @@ const Course = () => {
       </div>
     </div>
   }else{
-    content = <Typography.H1>Course not found !!!</Typography.H1>
+    content = <div>
+      <Button scaleOnHover className="absolute top-0 left-0" size={"medium"}><FiArrowLeftCircle size={20} className="mr-3"/><Link href={"/"}><span>Go Back</span></Link></Button>
+      <div style={{transform: 'translate(-50%, -50%)', }} className="absolute top-2/4 left-2/4">
+        <Typography.H1 className="uppercase animate-slow-bounce">Course not found !!!</Typography.H1>
+      </div>
+    </div>
   }
   return <Wrapper showNavbar={false}>
     {content}

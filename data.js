@@ -140,6 +140,7 @@ const data = {
       short_description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,',
       description: "This course will help you learn everything that go has to offer",
       start_date: "2021-06-14",
+      end_date: "2021-06-14",
       registration_link: 'https://localhost:5001/graphql',
       contents: [
         {

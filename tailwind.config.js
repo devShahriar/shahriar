@@ -87,7 +87,7 @@ module.exports = {
       animation: {
         wiggle: 'wiggle 1s ease-in-out infinite',
         'fade-in-down': 'fade-in-down 0.5s ease-out 1',
-        'fade-in-right': 'fade-in-right 1s ease-out 1',
+        'fade-in-right': 'fade-in-right .5s ease-out 1',
         'fade-in-from-right': fadeInFromRightAnimation,
         'fade-in-from-left': fadeInFromLeftAnimation,
         'slow-bounce': slowBounceAnimation,

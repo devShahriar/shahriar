@@ -14,14 +14,11 @@ export default function Section(props){
           if(!ref.current.classList.contains('animate-fade-in-right')){
             ref.current.classList.add('animate-fade-in-right')
             ref.current.classList.remove('opacity-0');
-            if(name === "Skills"){
-              document.querySelector('.tech_stack').classList.remove('hidden')
-            }
           }
           setCurrentSection(name)
         }
       });
-    }, { threshold: 0.65 });
+    }, { threshold: 0.25 });
     observer.observe(ref.current);
   }, []);
 

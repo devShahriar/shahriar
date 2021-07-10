@@ -55,6 +55,16 @@ module.exports = {
             transform: 'translateX(0)'
           }
         },
+        'fade-in-right': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateX(-25px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateX(0)'
+          }
+        },
         'slow-bounce': {
           '0%': {
             transform: 'translateY(-2.5px)'
@@ -71,6 +81,7 @@ module.exports = {
         wiggle: 'wiggle 1s ease-in-out infinite',
         'fade-in-from-right': fadeInFromRightAnimation,
         'fade-in-from-left': fadeInFromLeftAnimation,
+        'fade-in-right': 'fade-in-right .5s ease-out 1',
         'slow-bounce': slowBounceAnimation,
         'fade-l-bounce': `${fadeInFromRightAnimation}, ${slowBounceAnimation}`,
         'fade-r-bounce': `${fadeInFromLeftAnimation}, ${slowBounceAnimation}`,

@@ -3,13 +3,13 @@ import slugify from "slugify";
 const data = {
   name: "Shahriar Islam",
   about: {
-    title: "Hi, I'm Shahriar Islam",
+    title: "Hi, I'm S M Shahriar Islam",
     subtitles: [
-      "Data Engineer, Pathao"
+      "Data Engineer @ Pathao"
     ],
     resume: "https://drive.google.com/file/d/1yg75hWcIops3zdlu9HEzhVHg9WBp4wbb/view?fbclid=IwAR1sp9vwJdyW8-qzVmPF7GK2h88n4lTRJuTuyqo-U4KwYCsbXX3XKBzFmVw",
     bio: "Willing to work hard and face any challenges to provide the best results",
-    description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est"
+    description: "I am an experienced software engineer and a coding instructor. Over the past few years, I have earned experience in different domains of software engineering. I am focused as a Backend engineer. I like to work with distributed systems, microservices, and DevOps. Besides backend engineering, I have also learned the discipline of mobile development, front-end development. I love to share my knowledge of why I have taught many people about different technologies."
   },
   links: [
     {
@@ -30,27 +30,28 @@ const data = {
     {
       alt: "Email",
       icon: "gmail",
-      link: "mailto:iam@shahriar.islam.com"
+      link: "shudip.shahriar@gmail.com"
     }
   ],
   skills: [
     {
       name: "Languages",
-      items: ["Java","Javascript", "Python"]
+      items: ["Go","Java","Javascript","Python","Kotlin",{label: "Shell",icon:"GNU Bash"}]
     },
     {
       name: "Backend Development",
       items: [
+        "Go",
         {
           label: "Node.js",
           icon: "nodedotjs"
         }, 
-        "Express","Flask","Go"
+        "Express","Flask","Django","Rabbitmq","GraphQl"
       ]
     },
     {
       name: "Database",
-      items: ["MySQL", "Redis",  "Mongodb",  "Mysql"]
+      items: ["MySQL", "Redis",  "Mongodb",  "PostgreSQL"]
     },
     {
       name: "Mobile",
@@ -154,23 +155,23 @@ const data = {
   experiences: [
     {
       organization: "Pathao",
-      role: "Full Stack Developer",
-      type: "Internship",
-      start_date: "2020-07-20",
-      end_date: "2021-01-20",
+      role: "Data Engineer",
+      type: "Full-time",
+      start_date: "2021-05-02",
       thumbnail: "https://pathao.com/wp-content/uploads/2019/03/cropped-Pathao-icon-.png",
       location: "Dhaka, Bangladesh",
       descriptions: [
-        "dasdasd",
-        "dasdasds",
+        "Developing the backend infratructure of various services",
+        "Feature implemented in the fraud detection system",
+        "Working with various data pipelines"
       ]
     },
     {
-      organization: "Food Panda",
-      role: "Frontend Engineer",
-      type: "Freelancer",
-      start_date: "2020-07-20",
-      end_date: "2021-01-20",
+      organization: "Upwork",
+      role: "Backend Engineer Golang",
+      type: "Freelance",
+      start_date: "2020-01-19",
+      end_date: "2021-04-03",
       thumbnail: "https://pathao.com/wp-content/uploads/2019/03/cropped-Pathao-icon-.png",
       location: "Dhaka, Bangladesh",
       descriptions: [

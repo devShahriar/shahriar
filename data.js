@@ -16,7 +16,6 @@ const data = {
       alt: "Linkedin",
       icon: "linkedin",
       link: "https://www.linkedin.com/in/devshahriar/"
-
     },
     {
       alt: "Medium",

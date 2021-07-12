@@ -15,13 +15,13 @@ const data = {
     {
       alt: "Linkedin",
       icon: "linkedin",
-      link: "https://shudipshahriar.medium.com/"
-      
+      link: "https://www.linkedin.com/in/devshahriar/"
+
     },
     {
       alt: "Medium",
       icon: "Medium",
-      link: "https://stackoverflow.com/users/15832436/devShahriar"
+      link: "https://shudipshahriar.medium.com/"
     },
     {
       alt: "Github",

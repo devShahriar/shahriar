@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
     <Head>
       <title>{data.name}</title>
       <meta name="description" content="Portfolio for devShahriar" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/tech_stack.svg" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
       <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700;800&display=swap" rel="stylesheet"/>
     </Head>

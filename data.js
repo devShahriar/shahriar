@@ -16,6 +16,7 @@ const data = {
       alt: "Linkedin",
       icon: "linkedin",
       link: "https://shudipshahriar.medium.com/"
+      
     },
     {
       alt: "Medium",

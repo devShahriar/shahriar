@@ -22,7 +22,7 @@ function ExperienceItem(props) {
   } = props;
   
   return <div className="flex my-5 flex-col usm:flex-row">
-    <div className="mb-5 flex justify-center usm:mr-5" style={{width: 100, height: 100}}><img loading="lazy" style={{objectFit: 'contain'}} alt={organization} src={thumbnail} /></div>
+    <div className="mb-5 flex justify-center usm:mr-5" style={{width: 100, height: 100}}><img loading="lazy" className="object-contain" alt={organization} src={thumbnail} /></div>
     <div>
       <Typography.H3>{role}</Typography.H3>
       <Typography.Body1>{organization}, {type}</Typography.Body1>

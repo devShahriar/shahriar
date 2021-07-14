@@ -4,6 +4,7 @@ import { useContext } from 'react';
 import { FiArrowLeftCircle } from "react-icons/fi";
 import { Button, Logos, Typography, Wrapper } from "../../components";
 import { RootContext } from '../../contexts';
+import { formatDate } from "../../utils";
 
 const Course = () => {
   const {data} = useContext(RootContext);
@@ -11,22 +12,23 @@ const Course = () => {
   const { slug } = router.query
   const course = data.courses.find(course=>course.slug === slug) ?? null;
   
+  const button = <Button scaleOnHover className="absolute top-0 left-0" size={"medium"}><FiArrowLeftCircle size={20} className="mr-3"/><Link href={"/"}><span>Go Back</span></Link></Button>;
+
   let content = null;
   if(course){
-    content = <div>
-      <Button scaleOnHover className="absolute top-0 left-0" size={"medium"}><FiArrowLeftCircle size={20} className="mr-3"/><Link href={"/"}><span>Go Back</span></Link></Button>
+    content = <div className="lg:mt-0 mt-10">
+      {button}
       <div className="my-5 flex flex-col items-center">
         <Typography.H1>{course.title}</Typography.H1>
         <Logos items={course.topics} direction={"rows"}/>
         <div className="flex items-center">
-          <Typography.Subtitle1>Starts at {course.start_date}</Typography.Subtitle1>
-          {course.end_date && <Typography.Subtitle1 className="ml-5">Ends at {course.end_date}</Typography.Subtitle1>}
+          {course.end_date ? <Typography.Subtitle1>Ended at {formatDate(course.ended_date)}</Typography.Subtitle1> : <Typography.Subtitle1>Starts at {formatDate(course.start_date)}</Typography.Subtitle1>}
         </div>
         <Typography.Link link={course.registration_link}>Registration Link</Typography.Link>
       </div>
       <div className="my-5 mb-10 flex justify-center">
         <div style={{
-          height: 450,
+          height: '20em',
           width: 750
         }}>
           {course.video_url ? 
@@ -52,7 +54,7 @@ const Course = () => {
     </div>
   }else{
     content = <div>
-      <Button scaleOnHover className="absolute top-0 left-0" size={"medium"}><FiArrowLeftCircle size={20} className="mr-3"/><Link href={"/"}><span>Go Back</span></Link></Button>
+      {button}
       <div style={{transform: 'translate(-50%, -50%)', }} className="absolute top-2/4 left-2/4">
         <Typography.H1 className="uppercase animate-slow-bounce">Course not found !!!</Typography.H1>
       </div>

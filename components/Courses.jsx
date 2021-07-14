@@ -12,8 +12,8 @@ function CourseItem(props){
   const {item} = props;
   return <div className="flex flex-col">
     <Logos items={item.topics} direction={"rows"}/>
-    <div className="my-5 flex">
-      <img loading="lazy" src={item.image_url} alt={"Image"}/>
+    <div className="my-5 flex" style={{height: 250}}>
+      <img loading="lazy" className="object-scale-down w-full" src={item.image_url} alt={"Image"}/>
     </div>
     <Typography.Body2>
       {item.short_description}

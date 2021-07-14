@@ -215,7 +215,7 @@ const data = {
       type: "Freelancer",
       start_date: "2018-04-01",
       end_date: "2021-01-01",
-      thumbnail: "https://lh3.googleusercontent.com/sGNvIZgLekWTNAPXicmoYlrQSFKQC72dEwy8iYq15K9aw0uySJFT6gw5TnzoQGajym2pL2XFz__WBGe43Cikvq3SBshG2e5EuTT1eYXOubapzN3tPr1byCahCreqCUydA6txM6vAWVLjuISc_eLe9KCIA41pbVYbXnQksl9WK1DED_GxOPJNDM0nScsay0y0nwqxPEnT2Ce9BpltlJvwxQL775nvohOSYOy-cgKsEtO6mML_izeWA7d29GL70jHlF9ZYNqj-Y1wyaDwmyaKYoGI4NUaCgKIwCKS1WyVXWsozom7m3SZLGug1OBdRoa9rScERgMwtxCLxBHrh_qsIRUlaPtfGpfdgGpnXM5zvge_E-uu1gj_MUGLIdoGHdAIks8C2gpu9End_Gz0JGM18umjiEXvvtW5UVnWeXebDvXbB6Baf0RiAsIFplRJ2kQc3-M-R4-dY1fLyHDgvammrIBSdAPg7MmKG7T5EEYfpeLa1plFXuFZ-7F6Lr1W6BxYUiIuj9ut-dgCya4TP2BoFd9U7sUA6xjq5HtEP3KZXHlwwxlCgBw_zNxKPlCXxK-4nW4NAXFFamNvSqNbjPNSqm4EB4aQrN8EuFJ9GPDceXxwo9Twuu5dPrLKlfkKSuO7pNvrUlZ5g0PiMPsboWD_rrCW9hbrd4JEOsiVi3eM-ZufLRFaQWZ4nMIAYMTa2TtOAnI4-4Q0-nuob_MhpA5XQGbs6=w481-h331-no?authuser=1",
+      thumbnail: "https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png",
       location: "Dhaka, Bangladesh",
       descriptions: [
         "Node js",

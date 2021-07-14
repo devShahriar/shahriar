@@ -14,3 +14,7 @@ a {
 html {
   scroll-behavior: smooth;
 }
+
+img, video {
+  max-width: inherit;
+}

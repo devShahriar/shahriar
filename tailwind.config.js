@@ -9,7 +9,11 @@ module.exports = {
   theme: {
     colors: {
       primary: colors.green,
-      secondary: colors.gray
+      secondary: {
+        ...colors.gray,
+        800: colors.gray[900],
+        900: "#000"
+      }
     },
     fontFamily: {
       'mono': ['Inconsolata', 'monospace', 'Menlo', 'Consolas', 'Monaco'],

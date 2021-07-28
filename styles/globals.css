@@ -29,22 +29,22 @@ img, video {
 
 @keyframes neon-glow {
   0% {
-    text-shadow: 0 0 5px rgb(34 197 94), 0 0 25px rgb(34 197 94);
+    text-shadow: 0 0 10px rgb(50, 237, 134), 0 0 25px rgb(34 197 94);
   }
 
   25% {
-    text-shadow: 0 0 7.5px rgb(34 197 94), 0 0 20px rgb(34 197 94);
+    text-shadow: 0 0 7.5px rgb(50, 237, 134), 0 0 20px rgb(34 197 94);
   }
 
   50% {
-    text-shadow: 0 0 10px rgb(34 197 94), 0 0 15px rgb(34 197 94);
+    text-shadow: 0 0 5px rgb(50, 237, 134), 0 0 15px rgb(34 197 94);
   }
 
   75% {
-    text-shadow: 0 0 7.5px rgb(34 197 94), 0 0 20px rgb(34 197 94);
+    text-shadow: 0 0 7.5px rgb(50, 237, 134), 0 0 20px rgb(34 197 94);
   }
 
   100% {
-    text-shadow: 0 0 5px rgb(34 197 94), 0 0 25px rgb(34 197 94);
+    text-shadow: 0 0 10px rgb(50, 237, 134), 0 0 25px rgb(34 197 94);
   }
 }

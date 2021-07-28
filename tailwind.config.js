@@ -8,7 +8,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
-      primary: colors.green,
+      primary: {
+        ...colors.green,
+        500: "#00ff75"
+      },
       secondary: {
         ...colors.gray,
         800: colors.gray[900],

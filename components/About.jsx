@@ -14,7 +14,7 @@ export default function About(){
     <div className="flex items-center justify-between flex-col-reverse lg:flex-row">
       <div className="lg:mb-0 mb-5">
         <Typography.H1 secondary>{data.about.title}</Typography.H1>
-        <Typography.H2>
+        <Typography.H2 className="neon-glow">
           <ReactTyped
             strings={data.about.subtitles}
             typeSpeed={50}

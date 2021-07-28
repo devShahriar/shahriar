@@ -29,10 +29,10 @@ export default function Section(props){
 
   return <div ref={ref} className={`Section border-b-2 border-primary-500 py-20 my-10 opacity-0 Section-${props.name} ${props.className ?? ''}`}>
     {typeof children === "function" ? <>
-      {header && <Typography.H1>{header}</Typography.H1>}
+      {header && <Typography.H1 className="neon-glow">{header}</Typography.H1>}
       {children({isCurrentlyActive})}
     </> : <>
-      {header && <Typography.H1>{header}</Typography.H1>}
+      {header && <Typography.H1 className="neon-glow">{header}</Typography.H1>}
       {children}
     </>}
   </div>

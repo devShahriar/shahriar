@@ -5,7 +5,7 @@ const data = {
   about: {
     title: "Hi, I'm S M Shahriar Islam",
     subtitles: [
-      "tuku tuku tu ku tu ku @ Pathao"
+      "Software engineer @ Pathao"
     ],
     resume: "https://drive.google.com/file/d/1yg75hWcIops3zdlu9HEzhVHg9WBp4wbb/view?fbclid=IwAR1sp9vwJdyW8-qzVmPF7GK2h88n4lTRJuTuyqo-U4KwYCsbXX3XKBzFmVw",
     bio: "Willing to work hard and face any challenges to provide the best results",

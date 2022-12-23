@@ -5,7 +5,7 @@ const data = {
   about: {
     title: "Hi, I'm S M Shahriar Islam",
     subtitles: [
-      "Software Engineer @ Pathao"
+      "tuku tuku tu ku tu ku @ Pathao"
     ],
     resume: "https://drive.google.com/file/d/1yg75hWcIops3zdlu9HEzhVHg9WBp4wbb/view?fbclid=IwAR1sp9vwJdyW8-qzVmPF7GK2h88n4lTRJuTuyqo-U4KwYCsbXX3XKBzFmVw",
     bio: "Willing to work hard and face any challenges to provide the best results",
@@ -140,7 +140,7 @@ const data = {
   experiences: [
     {
       organization: "Pathao",
-      role: "tuku tuku tu ku tu ku ",
+      role: "software engineer",
       type: "Full-time",
       start_date: "2021-05-02",
       thumbnail: "https://pathao.com/wp-content/uploads/2019/03/cropped-Pathao-icon-.png",

@@ -5,7 +5,7 @@ const data = {
   about: {
     title: "Hi, I'm S M Shahriar Islam",
     subtitles: [
-      "Data Engineer @ Pathao"
+      "Software Engineer @ Pathao"
     ],
     resume: "https://drive.google.com/file/d/1yg75hWcIops3zdlu9HEzhVHg9WBp4wbb/view?fbclid=IwAR1sp9vwJdyW8-qzVmPF7GK2h88n4lTRJuTuyqo-U4KwYCsbXX3XKBzFmVw",
     bio: "Willing to work hard and face any challenges to provide the best results",
@@ -140,15 +140,21 @@ const data = {
   experiences: [
     {
       organization: "Pathao",
-      role: "Data Engineer",
+      role: "Software Engineer",
       type: "Full-time",
       start_date: "2021-05-02",
       thumbnail: "https://pathao.com/wp-content/uploads/2019/03/cropped-Pathao-icon-.png",
       location: "Dhaka, Bangladesh",
       descriptions: [
+        "Core Engineer of our allocation system which is responsible for paring user with best rider|foodman",
+        "Developed food man slotting feature in our allocation system. Which ensures avaiablity of foodman in a perticular area. It reduced user cancelaction",
+        "Developed ride bidding model in allocation system. User can offer fair and the rides can bid on that.",
+        "Improved user search experince . Maintener of our inhouse search engine",
+        "Develop ETA service which provides routes and estimation of duration accorinding to traffic data",
         "Developing the backend infratructure of various services",
         "Feature implemented in the fraud detection system",
-        "Working with various data pipelines"
+        "Working with various data pipelines",
+        "Responsible for service relaibility"
       ]
     },
     {

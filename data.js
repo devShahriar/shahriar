@@ -140,7 +140,7 @@ const data = {
   experiences: [
     {
       organization: "Pathao",
-      role: "Software Engineer",
+      role: "tuku tuku tu ku tu ku ",
       type: "Full-time",
       start_date: "2021-05-02",
       thumbnail: "https://pathao.com/wp-content/uploads/2019/03/cropped-Pathao-icon-.png",
